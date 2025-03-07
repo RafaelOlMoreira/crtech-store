@@ -4,7 +4,7 @@ import Mockup from "../../../assets/MockupAboutSection.png";
 
 const AboutSection = () => {
     return (
-        <div className='dark:bg-gray-900'>
+        <div className='bg-gradient-to-b from-[#101828] to-[#0a0f1a]'>
             <section className="w-full max-w-6xl mx-auto py-16 px-4">
                 <h2 className="text-6xl font-[Poppins] text-center text-white mb-12">Sobre Nós</h2>
 
