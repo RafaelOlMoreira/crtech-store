@@ -17,8 +17,8 @@ const Carousel = () => {
   }, []);
 
   return (
-    <div className="flex items-center justify-center h-screen bg-gray-900 pt-12">
-      <div className="top-0 left-0 w-screen h-full sm:h-full md:h-full overflow-hidden z-2">
+    <div className="flex items-center justify-center h-full bg-gray-900 pt-12">
+      <div className="top-0 left-0 w-screen h-full overflow-hidden z-2">
         <div
           className="flex transition-transform duration-700 ease-in-out"
           style={{ transform: `translateX(-${currentIndex * 100}%)` }}
