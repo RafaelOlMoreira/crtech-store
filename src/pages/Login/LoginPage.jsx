@@ -4,6 +4,7 @@ import AboutSection from "./components/AboutSection"
 import ProductsSection from "./components/ProductsSection"
 import ServiceSection from "./components/ServiceSection"
 import ContactSection from "./components/ContactSection"
+import Footer from "/public/Footer"
 
 import React from 'react'
 
@@ -22,6 +23,8 @@ function LoginPage() {
       <ServiceSection />
 
       <ContactSection />
+
+      <Footer />
 
     </div>
   )
