@@ -3,14 +3,10 @@ import { FaInstagram, FaWhatsapp } from "react-icons/fa";
 
 function ContactSection() {
     return (
-        <div className='bg-gradient-to-r from-[#1e2939] to-[#111827] min-h-screen flex justify-center items-center'>
+        <div className='bg-gradient-to-l from-[#1e2939] to-[#111827] min-h-screen flex justify-center items-center'>
             <section className="w-full max-w-7xl mx-auto py-16 px-4">
                 <h2 className="text-6xl font-[Poppins] text-center text-white mb-12">Contato</h2>
-
-                {/* Grid com 3 colunas */}
                 <div className='grid grid-cols-3 gap-8'>
-
-                    {/* Formulário na esquerda */}
                     <div className='flex justify-start items-center'>
                         <form className="w-full max-w-md bg-gray-800 shadow-lg shadow-gray-900 rounded-lg p-8">
                             <h6 className='text-white font-[poppins] flex justify-center items-center pb-5'>Envia uma mensagem para nós!</h6>
