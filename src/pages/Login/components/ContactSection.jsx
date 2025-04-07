@@ -6,9 +6,11 @@ function ContactSection() {
         <div className='bg-gradient-to-l from-[#1e2939] to-[#111827] min-h-screen flex justify-center items-center'>
             <section className="w-full max-w-7xl mx-auto py-16 px-4">
                 <h2 className="text-6xl font-[Poppins] text-center text-white mb-12">Contato</h2>
-                <div className='grid grid-cols-3 gap-8'>
-                    <div className='flex justify-start items-center'>
-                        <form className="w-full max-w-md bg-gray-800 shadow-lg shadow-gray-900 rounded-lg p-8">
+                <div className='grid lg:grid-cols-3 gap-8
+                                grid-cols-1 justify-items-center'>
+                    {/* Formulário */}
+                    <div className='w-full max-w-md'>
+                        <form className="w-full bg-gray-800 shadow-lg shadow-gray-900 rounded-lg p-8">
                             <h6 className='text-white font-[poppins] flex justify-center items-center pb-5'>Envia uma mensagem para nós!</h6>
                             <div className="relative z-0 w-full mb-5 group">
                                 <input type="text" name="floating_nome" id="floating_nome" className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
@@ -31,30 +33,32 @@ function ContactSection() {
                         </form>
                     </div>
 
-                    <div className="flex flex-col gap-3 text-justify justify-start items-center text-white w-full max-w-md bg-gray-800 shadow-lg shadow-gray-900 rounded-lg p-6">
-                        <h3 className="text-xl font-semibold">🏪 Nossa Localização 📍</h3>
+                    {/* Localização */}
+                    <div className="flex flex-col gap-3 text-justify text-white w-full max-w-md bg-gray-800 shadow-lg shadow-gray-900 rounded-lg p-6">
+                        <h3 className="text-xl font-semibold text-center">🏪 Nossa Localização 📍</h3>
                         <p>Atuamos exclusivamente como loja virtual, oferecendo comodidade e praticidade para você realizar suas compras de onde estiver! 💻📦</p>
                         <p>Não possuímos loja física, mas garantimos um atendimento ágil e eficiente pelo nosso site e canais de comunicação. Trabalhamos para proporcionar a melhor experiência de compra online, com segurança, qualidade e entrega garantida. 🚀✨</p>
                         <p>Em caso de dúvidas, entre em contato conosco! Estamos sempre prontos para atender você. 😊</p>
                     </div>
 
-                    <div className='flex justify-center items-center'>
-                        <div className='text-white w-full max-w-md bg-gray-800 shadow-lg shadow-gray-900 rounded-lg p-8'>
+                    {/* Contatos */}
+                    <div className='w-full max-w-md'>
+                        <div className='text-white w-full bg-gray-800 shadow-lg shadow-gray-900 rounded-lg p-8'>
                             <h3 className="text-xl font-semibold flex items-center justify-center pb-4">📌 Fale Conosco</h3>
                             <p className='flex items-center gap-4'>📞 Telefone: (31) 99247-9530</p>
                             <p>📧 E-mail: tech.cr.assistencia@gmail.com</p>
-                            <p className='flex h-auto items-center'>📱 Redes Sociais:
-                                <a href="https://api.whatsapp.com/send?phone=5531992479530" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-green-500 px-1 py-1 rounded-lg hover:bg-green-800 transition ml-1" >
+                            <div className='flex items-center'>
+                                <span className='mr-2'>📱 Redes Sociais:</span>
+                                <a href="https://api.whatsapp.com/send?phone=5531992479530" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-green-500 px-1 py-1 rounded-lg hover:bg-green-800 transition" >
                                     <FaWhatsapp size={24} />
                                 </a>
                                 <a href="https://www.instagram.com/cr.tech_bh" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-pink-500 px-1 py-1 rounded-lg hover:bg-pink-800 transition" >
                                     <FaInstagram size={24} />
                                 </a>
-                            </p>
+                            </div>
                             <p>🕒 Atendimento: 24 horas, todos os dias</p>
                         </div>
                     </div>
-
                 </div>
             </section >
         </div >
