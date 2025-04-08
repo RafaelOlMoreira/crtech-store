@@ -6,7 +6,7 @@ import card3 from '../../../assets/card3.png';
 
 const ProductsSection = () => {
     return (
-        <div className='bg-gradient-to-r from-[#1e2939] to-[#111827] min-h-screen'>
+        <div className='bg-gradient-to-r from-[#1e2939] to-[#111827] min-h-screen' id="produtos">
             <section className="w-full mx-auto py-16 px-4">
                 <h2 className="text-6xl font-[Poppins] text-center text-white mb-12">Produtos</h2>
 

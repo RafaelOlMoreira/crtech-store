@@ -47,7 +47,7 @@ function ContactSection() {
     };
 
     return (
-        <div className='bg-gradient-to-l from-[#1e2939] to-[#111827] min-h-screen flex justify-center items-center'>
+        <div className='bg-gradient-to-l from-[#1e2939] to-[#111827] min-h-screen flex justify-center items-center' id="contato">
             <section className="w-full max-w-7xl mx-auto py-16 px-4">
                 <h2 className="text-6xl font-[Poppins] text-center text-white mb-12">Contato</h2>
                 <div className='grid lg:grid-cols-3 gap-8 grid-cols-1 justify-items-center'>

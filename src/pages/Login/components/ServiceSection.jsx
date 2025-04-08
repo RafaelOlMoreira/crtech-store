@@ -6,7 +6,7 @@ import card3 from '../../../assets/serviceCard3.png';
 
 function ServiceSection() {
     return (
-        <div className='bg-gradient-to-l from-[#101828] to-[#0a0f1a]'>
+        <div className='bg-gradient-to-l from-[#101828] to-[#0a0f1a]' id="serviços">
             <section className="w-full max-w-7xl mx-auto py-16 px-4">
                 <h2 className="text-6xl font-[Poppins] text-center text-white mb-12">Serviços</h2>
 
