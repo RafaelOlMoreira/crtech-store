@@ -11,11 +11,11 @@ const NavBar = () => {
     const handleMenuClick = (section) => {
         setCurrentSection(section);
         setIsMenuOpen(false);
-        
+
         // Rola até a section correspondente
         const element = document.getElementById(section.toLowerCase().replace(' ', '-'));
         if (element) {
-            element.scrollIntoView({ 
+            element.scrollIntoView({
                 behavior: 'smooth',
                 block: 'start'
             });
@@ -34,7 +34,7 @@ const NavBar = () => {
         <>
             {/* Overlay escuro quando menu está aberto */}
             {isMenuOpen && (
-                <div 
+                <div
                     className="fixed inset-0 bg-black bg-opacity-50 z-30 md:hidden"
                     onClick={toggleMenu}
                 />
@@ -43,8 +43,8 @@ const NavBar = () => {
             <nav className="bg-white dark:bg-gray-900 h-[70px] w-full z-50 fixed top-0 left-0 shadow-md">
                 <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
                     {/* Logo */}
-                    <a 
-                        href="#início" 
+                    <a
+                        href="#início"
                         className="flex items-center space-x-3 rtl:space-x-reverse"
                         onClick={(e) => {
                             e.preventDefault();
@@ -59,16 +59,16 @@ const NavBar = () => {
 
                     {/* Botões */}
                     <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-                        <button 
-                            type="button" 
+                        <button
+                            type="button"
                             className="text-white bg-[#0096ff] hover:bg-[#0072C6] font-medium rounded-lg text-sm px-4 py-2 text-center transition duration-300"
                         >
                             Acessar a Loja
                         </button>
 
-                        <button 
+                        <button
                             onClick={toggleMenu}
-                            type="button" 
+                            type="button"
                             className="inline-flex items-center p-2 w-10 h-10 justify-center text-gray-500 rounded-lg md:hidden"
                             aria-label={isMenuOpen ? "Fechar menu" : "Abrir menu"}
                         >
@@ -109,7 +109,7 @@ const NavBar = () => {
                     {/* Menu Mobile - Só aparece quando aberto */}
                     {isMenuOpen && (
                         <div className="fixed inset-0 mt-[70px] bg-white dark:bg-gray-900 z-40 h-[calc(100vh-70px)] overflow-y-auto py-4 w-full md:hidden">
-                            <ul className="flex flex-col space-y-3">
+                            <ul className="flex flex-col text-center">
                                 {menuItems.map((item) => (
                                     <li key={item.id} className="w-full">
                                         <a
