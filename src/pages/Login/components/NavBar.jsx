@@ -63,7 +63,7 @@ const NavBar = () => {
                             type="button" 
                             className="text-white bg-[#0096ff] hover:bg-[#0072C6] font-medium rounded-lg text-sm px-4 py-2 text-center transition duration-300"
                         >
-                            Entrar / Registrar
+                            Acessar a Loja
                         </button>
 
                         <button 
