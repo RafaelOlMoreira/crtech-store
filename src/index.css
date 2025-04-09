@@ -2,5 +2,16 @@
 @import "tailwindcss";
 
 html {
-    scroll-behavior: smooth;
-  }
+  scroll-behavior: smooth;
+  scroll-padding-top: 70px;
+}
+
+section[id] {
+  scroll-margin-top: 70px;
+  padding-top: 70px;
+  margin-top: -70px;
+}
+
+.transition-colors {
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
