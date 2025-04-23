@@ -7,7 +7,7 @@ import card3 from '../../../assets/card3.png';
 const ProductsSection = () => {
     return (
         <div className='bg-gradient-to-t from-[#1e2939] to-[#111827] min-h-screen' id="produtos">
-            <section className="w-full mx-auto py-16 px-4">
+            <section className="w-full max-w-7xl mx-auto py-16 px-4">
                 <h2 className="text-6xl font-[Poppins] text-center text-white mb-12">Produtos</h2>
 
                 <div className="grid 2xl:grid-cols-4 gap-4 text-white
@@ -28,15 +28,15 @@ const ProductsSection = () => {
                     </div>
 
                     <div className="md:h-full w-75 rounded-lg shadow-lg overflow-hidden transition-transform transform hover:scale-105 hover:shadow-xl 
-                        sm:w-full flex justify-center">
+                                            sm:w-full flex justify-center">
                         <img src={card1} alt="Card 1" className="w-full h-full object-cover" />
                     </div>
                     <div className="md:h-full w-75 rounded-lg shadow-lg overflow-hidden transition-transform transform hover:scale-105 hover:shadow-xl 
-                        sm:w-full flex justify-center">
+                                            sm:w-full flex justify-center">
                         <img src={card2} alt="Card 2" className="w-full h-full object-cover" />
                     </div>
                     <div className="md:h-full w-75 rounded-lg shadow-lg overflow-hidden transition-transform transform hover:scale-105 hover:shadow-xl 
-                        sm:w-full flex justify-center lg:col-span-1">
+                                            sm:w-full flex justify-center lg:col-span-1">
                         <img src={card3} alt="Card 3" className="w-full h-full object-cover" />
                     </div>
                 </div>
