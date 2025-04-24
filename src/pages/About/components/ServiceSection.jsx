@@ -28,9 +28,10 @@ function ServiceSection() {
                         <img src={card3} alt="Card 3" className="w-full h-full object-cover" />
                     </div>
 
-                    <div className="2xl:h-full 2xl:col-span-1 text-center text-4xl font-[Poppins] grid place-items-center
-                        lg:col-span-3 lg:h-50 lg:order-1
-                        sm:col-span-2 sm:h-50 xs:col-span-1 mb-5">
+                    <div className="2xl:h-full 2xl:col-span-1 2xl:order-1 text-center text-4xl font-[Poppins] grid place-items-center
+                        lg:col-span-3 lg:h-50 lg:order-first
+                        sm:col-span-2 sm:h-50
+                        xs:col-span-1 order-first mb-5">
                         <div>
                             Conheça nossos serviços da
                             <p className="text-5xl font-bold text-[#ffb800] leading-tight">CR Tech</p>
