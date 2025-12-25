@@ -58,9 +58,6 @@ function Header() {
                     <li className='font-semibold py-3 hover:border-b-3 hover:border-[#00b7ff]'>
                         <a href="#">Suporte</a>
                     </li>
-                    <li className='font-semibold py-3 hover:border-b-3 hover:border-[#00b7ff]'>
-                        <a href="#">Blog</a>
-                    </li>
                 </ul>
             </div>
 
