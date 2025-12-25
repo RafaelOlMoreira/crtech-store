@@ -1,1 +1,18 @@
+@font-face {
+  font-family: Poppins;
+  src: url("../src/frontend/assets/fonts/Poppins-Regular.ttf");
+  
+  font-family: BebasNeue;
+  src: url("../src/frontend/assets/fonts/BebasNeue-Regular.ttf");
+  
+  font-family: Montserrat;
+  src: url("../src/frontend/assets/fonts/Montserrat-Regular.ttf")
+}
+
 @import "tailwindcss";
+
+@theme {
+  --font-poppins: Poppins, "arial";
+  --font-bebasneue: BebasNeue, "arial";
+  --font-montserrat: Montserrat, "arial"
+}

@@ -2,7 +2,7 @@ import React from 'react'
 
 function Header() {
     return (
-        <div className='fixed items-center px-5 pt-5 bg-white shadow-2xl h-32.5 w-full'>
+        <div className='fixed items-center px-5 pt-5 bg-white shadow-2xl h-32.5 w-full font-poppins'>
 
             <div className='flex items-center'>
                 {/* Input de pesquisa */}
