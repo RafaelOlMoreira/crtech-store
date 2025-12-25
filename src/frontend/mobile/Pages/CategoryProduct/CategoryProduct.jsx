@@ -6,7 +6,7 @@ import Carregadores from '/Carregadores.png'
 
 function CategoryProduct() {
     return (
-        <div className='py-5 px-4' id='Produtos'>
+        <div className='overflow-x-hidden py-5 px-4' id='Produtos'>
             <h1 className='py-2 text-xl uppercase font-montserrat font-extrabold text-center'>Categoria de Produtos</h1>
             <div className='bg-white grid grid-cols-2 gap-5'>
 
