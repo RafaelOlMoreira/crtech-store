@@ -2,7 +2,7 @@ import React from 'react'
 
 function Header() {
     return (
-        <div className='fixed items-center px-5 pt-5 bg-white shadow-2xl h-32.5 w-full font-poppins'>
+        <div className='fixed z-999 items-center px-5 pt-5 bg-white shadow-2xl h-32.5 w-full font-poppins scroll-smooth'>
 
             <div className='flex items-center'>
                 {/* Input de pesquisa */}
@@ -47,7 +47,7 @@ function Header() {
             <div className='pt-5'>
                 <ul className='flex justify-evenly'>
                     <li className='font-semibold py-3 hover:border-b-3 hover:border-[#00b7ff]'>
-                        <a href="#">Produtos</a>
+                        <a href="#Produtos">Produtos</a>
                     </li>
                     <li className='font-semibold py-3 hover:border-b-3 hover:border-[#00b7ff]'>
                         <a href="#">Ofertas</a>
