@@ -8,7 +8,7 @@ import Carregadores from '/Carregadores.png'
 
 function PromoCategory() {
     return (
-        <div className='overflow-x-hidden py-8 m-2 space-y-3'>
+        <div className='overflow-x-hidden py-8 p-2 space-y-3' id='Ofertas'>
 
             {/* Banner de promoção */}
             <div className='h-auto bg-center bg-cover bg-no-repeat rounded-2xl shadow-2xl' style={{ backgroundImage: `url(${PromoBanner})` }}>

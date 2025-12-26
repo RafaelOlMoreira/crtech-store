@@ -50,7 +50,7 @@ function Header() {
                         <a href="#Produtos">Produtos</a>
                     </li>
                     <li className='font-semibold py-3 hover:border-b-3 hover:border-[#00b7ff]'>
-                        <a href="#">Ofertas</a>
+                        <a href="#Ofertas">Ofertas</a>
                     </li>
                     <li className='font-semibold py-3 hover:border-b-3 hover:border-[#00b7ff]'>
                         <a href="#">Novos</a>
