@@ -8,6 +8,7 @@ import CategoryProduct from './frontend/mobile/Pages/CategoryProduct/CategoryPro
 import PromoCategory from './frontend/mobile/Pages/PromoCategory/PromoCategory'
 import NewProducts from './frontend/mobile/Pages/NewProducts/NewProducts'
 import Suport from './frontend/mobile/Pages/Suport/Suport'
+import Footer from './frontend/mobile/Components/Footer'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -19,6 +20,8 @@ createRoot(document.getElementById('root')).render(
     <PromoCategory />
     <NewProducts />
     <Suport />
+
+    <Footer />
 
   </StrictMode>,
 )
