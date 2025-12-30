@@ -7,6 +7,7 @@ import Hero from './frontend/mobile/Pages/Hero/Hero'
 import CategoryProduct from './frontend/mobile/Pages/CategoryProduct/CategoryProduct'
 import PromoCategory from './frontend/mobile/Pages/PromoCategory/PromoCategory'
 import NewProducts from './frontend/mobile/Pages/NewProducts/NewProducts'
+import Suport from './frontend/mobile/Pages/Suport/Suport'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -16,6 +17,7 @@ createRoot(document.getElementById('root')).render(
     <CategoryProduct />
     <PromoCategory />
     <NewProducts />
+    <Suport />
 
   </StrictMode>,
 )
