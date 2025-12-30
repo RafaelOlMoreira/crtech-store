@@ -8,6 +8,7 @@ import Carregadores from '/Carregadores.png'
 
 function PromoCategory() {
     return (
+        // Div geral Categoria Promoção
         <div className='overflow-x-hidden py-10 px-4 space-y-3' id='Ofertas'>
 
             {/* Banner de promoção */}
@@ -29,6 +30,7 @@ function PromoCategory() {
 
                 {/* Card Capinhas */}
                 <div className='bg-center h-35 bg-cover bg-no-repeat flex rounded-2xl' style={{ backgroundImage: `url(${Capinhas})` }}>
+                    {/* Span de desconto */}
                     <span className='absolute uppercase text-nowrap p-1 m-1.5 text-white text-[12px] bg-[#7c3ad0] rounded-lg'>10% OFF</span>
                     <div className='flex text-white mt-auto w-full py-2 px-2 bg-[#000000da] drop-shadow-slate-950 rounded-b-2xl'>
                         <h2 className='text-[16px]'>Capinhas</h2>
@@ -42,6 +44,7 @@ function PromoCategory() {
 
                 {/* Card Películas */}
                 <div className='bg-center h-35 bg-cover bg-no-repeat flex rounded-2xl' style={{ backgroundImage: `url(${Peliculas})` }}>
+                    {/* Span de desconto */}
                     <span className='absolute uppercase text-nowrap p-1 m-1.5 text-white text-[12px] bg-[#7c3ad0] rounded-lg'>15% OFF</span>
                     <div className='flex text-white mt-auto w-full py-2 px-2 bg-[#000000da] drop-shadow-slate-950 rounded-b-2xl'>
                         <h2 className='text-[16px]'>Películas</h2>
@@ -56,6 +59,7 @@ function PromoCategory() {
 
                 {/* Card Fones */}
                 <div className='bg-center h-35 bg-cover bg-no-repeat flex rounded-2xl' style={{ backgroundImage: `url(${Fones})` }}>
+                    {/* Span de desconto */}
                     <span className='absolute uppercase text-nowrap p-1 m-1.5 text-white text-[12px] bg-[#7c3ad0] rounded-lg'>20% OFF</span>
                     <div className='flex text-white mt-auto w-full py-2 px-2 bg-[#000000da] drop-shadow-slate-950 rounded-b-2xl'>
                         <h2 className='text-[16px]'>Fones</h2>
@@ -69,6 +73,7 @@ function PromoCategory() {
 
                 {/* Card Carregadores */}
                 <div className='bg-center h-35 bg-cover bg-no-repeat flex rounded-2xl' style={{ backgroundImage: `url(${Carregadores})` }}>
+                    {/* Span de desconto */}
                     <span className='absolute uppercase text-nowrap p-1 m-1.5 text-white text-[12px] bg-[#7c3ad0] rounded-lg'>30% OFF</span>
                     <div className='flex text-white mt-auto w-full py-2 px-2 bg-[#000000da] drop-shadow-slate-950 rounded-b-2xl'>
                         <h2 className='text-[16px]'>Carregadores</h2>

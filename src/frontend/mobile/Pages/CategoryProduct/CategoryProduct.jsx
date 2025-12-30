@@ -6,10 +6,11 @@ import Carregadores from '/Carregadores.png'
 
 function CategoryProduct() {
     return (
+        // Div geral Categoria de Produtos
         <div className='overflow-x-hidden py-10 px-4' id='Produtos'>
             <h1 className='py-10 text-xl uppercase font-montserrat font-extrabold text-center'>Categoria de Produtos</h1>
+            {/* Grid dos cards de Categoria */}
             <div className='bg-white grid grid-cols-2 gap-5'>
-
                 {/* Card Capinhas */}
                 <div className='bg-center h-35 bg-cover bg-no-repeat flex rounded-2xl' style={{ backgroundImage: `url(${Capinhas})` }}>
                     <div className='flex text-white mt-auto w-full py-2 px-2 bg-[#000000da] drop-shadow-slate-950 rounded-b-2xl'>

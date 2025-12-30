@@ -4,10 +4,13 @@ import Capinha from '/CapinhaPromo.png'
 
 function NewProducts() {
     return (
+        // Div geral dos Novos Produtos
         <div className='h-auto overflow-y-hidden py-10 px-4 font-montserrat' id='Novidade'>
             <h1 className='py-5 px-8 text-xl uppercase font-extrabold text-center'>Veja os novos produtos da CR TECH</h1>
 
+            {/* Grid dos cards de Produtos Novos */}
             <div className='grid grid-cols-2 gap-5'>
+                {/* Card 01 */}
                 <a href="#">
                     <div className='bg-white shadow-2xl hover:border hover:border-[#00b7ff] rounded-2xl p-3'>
                         <div>
@@ -26,6 +29,7 @@ function NewProducts() {
                     </div>
                 </a>
 
+                {/* Card 02 */}
                 <a href="#">
                     <div className='bg-white shadow-2xl hover:border hover:border-[#00b7ff] rounded-2xl p-3'>
                         <div>
@@ -46,6 +50,7 @@ function NewProducts() {
 
             </div>
 
+            {/* Instagram CR Tech */}
             <div className='pt-10 space-y-5 mx-auto'>
                 <p className='px-6 text-[16px] text-center drop-shadow-xs'>Acompanhe muito mais informações em nosso Instagram:</p>
                 <div className='flex justify-center'>
