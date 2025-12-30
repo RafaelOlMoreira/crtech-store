@@ -2,7 +2,7 @@ import React from 'react'
 
 function Header() {
     return (
-        <div className='overflow-x-hidden fixed z-999 items-center px-5 pt-5 bg-white shadow-2xl h-32.5 w-full font-poppins'>
+        <header className='overflow-x-hidden fixed z-999 items-center px-5 pt-5 bg-white shadow-2xl h-32.5 w-full font-poppins'>
 
             <div className='flex items-center'>
                 {/* Input de pesquisa */}
@@ -53,15 +53,15 @@ function Header() {
                         <a href="#Ofertas">Ofertas</a>
                     </li>
                     <li className='font-semibold py-3 hover:border-b-3 hover:border-[#00b7ff]'>
-                        <a href="#">Novos</a>
+                        <a href="#Novidade">Novidades</a>
                         </li>
                     <li className='font-semibold py-3 hover:border-b-3 hover:border-[#00b7ff]'>
-                        <a href="#">Suporte</a>
+                        <a href="#Suporte">Suporte</a>
                     </li>
                 </ul>
             </div>
 
-        </div >
+        </header >
     )
 }
 

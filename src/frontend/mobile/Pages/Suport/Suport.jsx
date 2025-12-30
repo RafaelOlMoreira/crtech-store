@@ -2,7 +2,7 @@ import React from 'react'
 
 function Suport() {
     return (
-        <div className='h-auto overflow-y-hidden py-10 px-4 font-montserrat'>
+        <div className='h-auto overflow-y-hidden py-10 px-4 font-montserrat' id='Suporte'>
             <h1 className='py-5 px-8 text-xl uppercase font-extrabold text-center'>Suporte e Atendimento</h1>
             <p className='px-6 text-[16px] text-center drop-shadow-xs'>Precisa de ajuda? Fale agora pelo WhatsApp, ou envie um e-mail para nós.</p>
 

@@ -4,7 +4,7 @@ import Capinha from '/CapinhaPromo.png'
 
 function NewProducts() {
     return (
-        <div className='h-auto overflow-y-hidden py-10 px-4 font-montserrat'>
+        <div className='h-auto overflow-y-hidden py-10 px-4 font-montserrat' id='Novidade'>
             <h1 className='py-5 px-8 text-xl uppercase font-extrabold text-center'>Veja os novos produtos da CR TECH</h1>
 
             <div className='grid grid-cols-2 gap-5'>
