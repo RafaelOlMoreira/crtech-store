@@ -8,17 +8,17 @@ import Carregadores from '/Carregadores.png'
 
 function PromoCategory() {
     return (
-        <div className='overflow-x-hidden py-5 px-4 space-y-3' id='Ofertas'>
+        <div className='overflow-x-hidden py-10 px-4 space-y-3' id='Ofertas'>
 
             {/* Banner de promoção */}
             <div className='h-auto bg-center bg-cover bg-no-repeat rounded-2xl shadow-2xl' style={{ backgroundImage: `url(${PromoBanner})` }}>
                 <div className='py-10 px-4 flex items-center'>
                     <div className='mb-auto -mt-10 -ml-8'>
-                        <img className='absolute bg-center bg-cover bg-no-repeat h-46' src={CapinhaPromo} alt="" />
+                        <img className='absolute bg-center bg-cover bg-no-repeat h-46' src={CapinhaPromo} alt="Banner Promoção..." />
                     </div>  
                     <div className='ml-auto text-center space-y-2'>
                         <p className='text-lg uppercase w-min font-montserrat font-semibold'>Ofertas Imperdíveis</p>
-                        <button className='bg-[#00b7ff] p-2 px-3 uppercase font-semibold font-bebasneue rounded-lg'>Aproveite Já</button>
+                        <button className='bg-[#00b7ff] text-white p-2 px-3 uppercase font-semibold font-bebasneue rounded-lg'>Aproveite Já!</button>
                     </div>
                 </div>
             </div>
