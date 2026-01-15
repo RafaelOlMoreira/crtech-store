@@ -4,6 +4,7 @@ import { useState } from 'react';
 function Header() {
 
     const [profileMenuAberto, setProfileMenuAberto] = useState(false);
+    const [sacolaMenuAberto, setSacolaMenuAberto] = useState(false);
 
     return (
         // Header geral
@@ -31,7 +32,7 @@ function Header() {
                         </svg>
 
                         {/* Icone de Sacola */}
-                        <div>
+                        <button className='' onClick={() => setSacolaMenuAberto(!sacolaMenuAberto)}>
                             {/* Contador de Produtos na sacola */}
                             <div className='absolute bg-red-500 rounded-full w-3 h-3 ml-3'>
                                 <span className='flex items-center justify-center -my-0.75 text-white text-[10px]'>2</span>
@@ -39,7 +40,7 @@ function Header() {
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
                             </svg>
-                        </div>
+                        </button>
 
                         {/* Icone de Perfil */}
                         <button className='' onClick={() => setProfileMenuAberto(!profileMenuAberto)}>
@@ -131,6 +132,28 @@ function Header() {
                             </li>
                         </ul>
 
+                    </div>
+                </div>
+            </div>
+
+            <div className='flex justify-end px-8'>
+                <div className={`absolute z-2000 p-3 mt-17 px-4 rounded-2xl shadow-2xl bg-white shadow-current text-nowrap font-bebasneue text-md ${sacolaMenuAberto ? "opacity-100 pointer-events-auto fixed" : "opacity-0 pointer-events-none"}`}>
+
+                    <div className='font-montserrat space-x-2 px-10 text-center space-y-1'>
+
+                        <div className='flex space-x-3 items-center'>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-7">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
+                            </svg>
+                            <h2 className='font-bold'><span>2</span> Items</h2>
+
+                        </div>
+
+                        <p className='text-gray-600 text-[12px]'>Na sacola</p>
+
+                    </div>
+                    <div className='border-t border-gray-300 my-2 pt-2 text-center'>
+                        <a href="#" className='text-gray-800 border-b border-gray-400'>Ver todos os itens.</a>
                     </div>
                 </div>
             </div>
