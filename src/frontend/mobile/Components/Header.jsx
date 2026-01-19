@@ -1,9 +1,11 @@
 import React from 'react'
 import { useState } from 'react';
+import Capinhas from '/Capinhas.png';
 
 function Header() {
 
     const [profileMenuAberto, setProfileMenuAberto] = useState(false);
+    const [sacolaMenuAberto, setSacolaMenuAberto] = useState(false);
 
     return (
         // Header geral
@@ -31,7 +33,7 @@ function Header() {
                         </svg>
 
                         {/* Icone de Sacola */}
-                        <button className=''>
+                        <button className='' onClick={() => setSacolaMenuAberto(!sacolaMenuAberto)}>
                             {/* Contador de Produtos na sacola */}
                             <div className='absolute bg-red-500 rounded-full w-3 h-3 ml-3'>
                                 <span className='flex items-center justify-center -my-0.75 text-white text-[10px]'>2</span>
@@ -132,6 +134,91 @@ function Header() {
                         </ul>
 
                     </div>
+                </div>
+            </div>
+
+            <div className='flex justify-end px-4'>
+                <div className={`absolute z-2000 p-3 mt-17 px-5 w-80 rounded-2xl shadow-2xl shadow-current bg-white text-nowrap font-montserrat text-md ${sacolaMenuAberto ? "opacity-100 pointer-events-auto fixed" : "opacity-0 pointer-events-none"}`}>
+
+                    <div className='py-2 border-b border-gray-400'>
+                        <h1 className='font-semibold'>Itens da Sacola</h1>
+                    </div>
+
+                    <div class="py-5 pb-4">
+                        <div class="max-h-25 overflow-y-auto space-y-3">
+
+                            {/* Item 1 */}
+                            <div className='flex p-2 rounded-lg gap-x-1.5 border border-gray-400'>
+                                <div className='flex items-center pr-1'>
+                                    <img src={Capinhas} className='rounded-lg object-cover h-17' />
+                                </div>
+                                <div className='flex items-center justify-center'>
+                                    <div className='text-center'>
+                                        <p className='block text-sm text-wrap'>Capinha de Silicone</p>
+                                        <p className='text-[10px]'>Quantidade: 1</p>
+                                    </div>
+                                </div>
+                                <div className='flex items-center text-gray-600'>
+                                    <div>
+                                        <span className='text-[14px]'>R$ 20,00</span>
+                                        <a href="#" className='flex justify-center'>
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 hover:text-red-500">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="m14.74 9-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 0 1-2.244 2.077H8.084a2.25 2.25 0 0 1-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 0 0-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 0 1 3.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 0 0-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 0 0-7.5 0" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            {/* Item 2 */}
+                            <div className='flex p-2 rounded-lg gap-x-1.5 border border-gray-400'>
+                                <div className='flex items-center pr-1'>
+                                    <img src={Capinhas} className='rounded-lg object-cover h-17' />
+                                </div>
+                                <div className='flex items-center justify-center'>
+                                    <div className='text-center'>
+                                        <p className='block text-sm text-wrap'>Capinha de Silicone</p>
+                                        <p className='text-[10px]'>Quantidade: 1</p>
+                                    </div>
+                                </div>
+                                <div className='flex items-center text-gray-600'>
+                                    <div>
+                                        <span className='text-[14px]'>R$ 20,00</span>
+                                        <a href="#" className='flex justify-center'>
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 hover:text-red-500">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="m14.74 9-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 0 1-2.244 2.077H8.084a2.25 2.25 0 0 1-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 0 0-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 0 1 3.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 0 0-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 0 0-7.5 0" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            {/* Item 3 */}
+                            <div className='flex p-2 rounded-lg gap-x-1.5 border border-gray-400'>
+                                <div className='flex items-center pr-1'>
+                                    <img src={Capinhas} className='rounded-lg object-cover h-17' />
+                                </div>
+                                <div className='flex items-center justify-center'>
+                                    <div className='text-center'>
+                                        <p className='block text-sm text-wrap'>Capinha de Silicone</p>
+                                        <p className='text-[10px]'>Quantidade: 1</p>
+                                    </div>
+                                </div>
+                                <div className='flex items-center text-gray-600'>
+                                    <div>
+                                        <span className='text-[14px]'>R$ 20,00</span>
+                                        <a href="#" className='flex justify-center'>
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 hover:text-red-500">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="m14.74 9-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 0 1-2.244 2.077H8.084a2.25 2.25 0 0 1-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 0 0-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 0 1 3.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 0 0-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 0 0-7.5 0" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
                 </div>
             </div>
 
