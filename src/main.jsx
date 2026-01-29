@@ -3,25 +3,14 @@ import { createRoot } from 'react-dom/client'
 import './style.css'
 
 import Header from './frontend/mobile/Components/Header'
-import Hero from './frontend/mobile/Pages/Hero/Hero'
-import CategoryProduct from './frontend/mobile/Pages/CategoryProduct/CategoryProduct'
-import PromoCategory from './frontend/mobile/Pages/PromoCategory/PromoCategory'
-import NewProducts from './frontend/mobile/Pages/NewProducts/NewProducts'
-import Suport from './frontend/mobile/Pages/Suport/Suport'
-import Footer from './frontend/mobile/Components/Footer'
+import Carrousel from './frontend/mobile/Pages/Carrousel/Carrousel'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
 
     <Header />
 
-    <Hero />
-    <CategoryProduct />
-    <PromoCategory />
-    <NewProducts />
-    <Suport />
-
-    <Footer />
+    <Carrousel />
 
   </StrictMode>,
 )
