@@ -58,7 +58,7 @@ function Header() {
                 </div>
 
                     {/* Produtos no Carrinho */}
-                    <div className='h-2/4 overflow-y-auto px-10 space-y-5'>
+                    <div className='h-2/5 overflow-y-auto px-10 space-y-5'>
                         
                         {/* Produto do carrinho */}
                         <div className='flex py-4 border-b border-[#4a556556]'>
