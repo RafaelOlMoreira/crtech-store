@@ -51,7 +51,7 @@ function Header() {
             </div>
 
             {/* Menu Carrinho */}
-            <div className={`z-3000 fixed inset-0 bg-white h-screen w-full ${carrinhoMenuAberto ? "opacity-100 pointer-events-auto fixed" : "opacity-0 pointer-events-none"}`}>
+            <div className={`z-3000 fixed inset-0 bg-white h-screen overflow-y-auto w-full ${carrinhoMenuAberto ? "opacity-100 pointer-events-auto fixed" : "opacity-0 pointer-events-none"}`}>
                 <div className='flex items-center px-10 h-16 w-full border-b border-gray-400'>
                     <h1 className='font-bebasneue font-bold text-xl'>Carrinho de Compras</h1>
                     <IoIosClose className='size-10 ml-auto text-gray-400' onClick={() => setCarrinhoMenuAberto(!carrinhoMenuAberto)} />
