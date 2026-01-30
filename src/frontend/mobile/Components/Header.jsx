@@ -68,21 +68,23 @@ function Header() {
                                     <h1 className='text-md font-semibold font-montserrat -my-1'>Capa 13 Pro Max</h1>
                                     <span className='text-gray-500'>Vermelho</span>
                                 </div>
-                                <div className='flex space-x-5'>
+                                <div className='flex space-x-5 text-md'>
                                     <HiOutlineMinus className='size-6 border border-[#4a556556] rounded-sm hover:bg-gray-200' />
                                     <span>1</span>
                                     <IoIosAdd className='size-6 border border-[#4a556556] rounded-sm hover:bg-gray-200' />
-                                    <h6>R$ <span>20.00</span></h6>
+                                    <h6 className='text-nowrap'>R$ <span>20.00</span></h6>
                                 </div>
                             </div>
                         </div>
-                        <FaRegTrashAlt className='ml-auto text-[#4a5565a8]' />
+                        <div className='flex justify-center'>
+                            <FaRegTrashAlt className='ml-auto text-[#4a5565a8]' />
+                        </div>
                     </div>
                 </div>
 
                 <div className='px-10 border-t border-[#4a556556]'>
                     <div className='py-4 space-y-5 border-b border-[#4a556556]'>
-                        <div className='flex justify-between'>
+                        <div className='flex justify-between text-md'>
                             <p>Subtotal</p>
                             <span>R$ 20.00</span>
                         </div>
