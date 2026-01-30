@@ -58,10 +58,56 @@ function Header() {
                 </div>
 
                     {/* Produtos no Carrinho */}
-                    <div className='h-2/5 overflow-y-auto px-10 space-y-5'>
+                    <div className='h-2/5 overflow-y-auto px-10 py-4 space-y-5'>
                         
                         {/* Produto do carrinho */}
-                        <div className='flex py-4 border-b border-[#4a556556]'>
+                        <div className='flex pb-4 border-b border-[#4a556556]'>
+                            <img src="/Capa.png" className='h-22 rounded-lg' />
+                            <div className='flex mx-5 items-center'>
+                                <div className='space-y-2'>
+                                    <div className='flex'>
+                                        <div className='w-full'>
+                                            <h1 className='text-md font-semibold font-montserrat -my-1'>Capa 13 Pro Max</h1>
+                                            <span className='text-gray-500'>Vermelho</span>
+                                        </div>
+                                        <div className='w-auto'>
+                                            <FaRegTrashAlt className='mr-auto text-[#4a5565a8]' />
+                                        </div>
+                                    </div>
+                                    <div className='flex items-center space-x-5 text-md'>
+                                        <HiOutlineMinus className='size-6 border border-[#4a556556] rounded-sm hover:bg-gray-200' />
+                                        <span>1</span>
+                                        <IoIosAdd className='size-6 border border-[#4a556556] rounded-sm hover:bg-gray-200' />
+                                        <h6 className='text-nowrap'>R$ <span>20.00</span></h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        {/* Produto do carrinho */}
+                        <div className='flex pb-4 border-b border-[#4a556556]'>
+                            <img src="/Capa.png" className='h-22 rounded-lg' />
+                            <div className='flex mx-5 items-center'>
+                                <div className='space-y-2'>
+                                    <div className='flex'>
+                                        <div className='w-full'>
+                                            <h1 className='text-md font-semibold font-montserrat -my-1'>Capa 13 Pro Max</h1>
+                                            <span className='text-gray-500'>Vermelho</span>
+                                        </div>
+                                        <div className='w-auto'>
+                                            <FaRegTrashAlt className='mr-auto text-[#4a5565a8]' />
+                                        </div>
+                                    </div>
+                                    <div className='flex items-center space-x-5 text-md'>
+                                        <HiOutlineMinus className='size-6 border border-[#4a556556] rounded-sm hover:bg-gray-200' />
+                                        <span>1</span>
+                                        <IoIosAdd className='size-6 border border-[#4a556556] rounded-sm hover:bg-gray-200' />
+                                        <h6 className='text-nowrap'>R$ <span>20.00</span></h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        {/* Produto do carrinho */}
+                        <div className='flex pb-4 border-b border-[#4a556556]'>
                             <img src="/Capa.png" className='h-22 rounded-lg' />
                             <div className='flex mx-5 items-center'>
                                 <div className='space-y-2'>
