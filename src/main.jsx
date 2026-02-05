@@ -5,6 +5,7 @@ import './style.css'
 
 import Header from './frontend/mobile/Components/Header'
 import Carrousel from './frontend/mobile/Pages/Carrousel/Carrousel'
+import Categories from './frontend/mobile/Pages/Categories/Categories'
 
 const slides = [
     "/Foto1.jpg",
@@ -21,6 +22,7 @@ createRoot(document.getElementById('root')).render(
         <img src={s} />
       ))}
     </Carrousel>
+    <Categories />
 
   </StrictMode>,
 )
