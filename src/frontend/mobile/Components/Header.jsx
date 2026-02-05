@@ -34,8 +34,8 @@ function Header() {
                             </span>
                             <RiShoppingCartLine className='size-6' />
                         </li>
+                        {/* Icon Menu */}
                         <li className='p-2 rounded-lg hover:bg-gray-200' onClick={() => setNavMenuAberto(!navMenuAberto)}>
-                            {/* Icon Menu */}
                             <HiOutlineMenu className='size-7' />
                         </li>
                     </ul>
@@ -43,11 +43,9 @@ function Header() {
             </header>
 
             {/* Menu Pesquisa */}
-            <div className='bg-white'>
-                <div className={`flex fixed items-center pt-26 p-3 px-6 space-x-1.5 bg-white w-full ${searchMenuAberto ? "opacity-100 pointer-events-auto fixed" : "opacity-0 pointer-events-none"}`}>
-                    <input type="search" name="" id="" placeholder='Buscar produtos, marcas...' className='p-2 border border-gray-300 rounded-lg w-full' />
-                    <FiSearch className='size-10 text-white bg-[#00B5FF] p-2 rounded-lg' />
-                </div>
+            <div className={`fixed inset-x-0 top-0 flex items-center pt-24 p-3 px-6 bg-white ${searchMenuAberto ? "opacity-100 pointer-events-auto fixed" : "opacity-0 pointer-events-none"}`}>
+                <input type="search" name="" id="" placeholder='Buscar produtos, marcas...' className='p-2 border border-gray-300 rounded-lg w-full' />
+                <FiSearch className='size-10 text-white bg-[#00B5FF] p-2 rounded-lg' />
             </div>
 
             {/* Menu Carrinho */}
@@ -57,109 +55,109 @@ function Header() {
                     <IoIosClose className='size-10 ml-auto text-gray-400' onClick={() => setCarrinhoMenuAberto(!carrinhoMenuAberto)} />
                 </div>
 
-                    {/* Produtos no Carrinho */}
-                    <div className='h-2/5 overflow-y-auto px-10 py-4 space-y-5'>
-                        
-                        {/* Produto do carrinho */}
-                        <div className='flex pb-4 border-b border-[#4a556556]'>
-                            <img src="/Capa.png" className='h-22 rounded-lg' />
-                            <div className='flex mx-5 items-center'>
-                                <div className='space-y-2'>
-                                    <div className='flex'>
-                                        <div className='w-full'>
-                                            <h1 className='text-md font-semibold font-montserrat -my-1'>Capa 13 Pro Max</h1>
-                                            <span className='text-gray-500'>Vermelho</span>
-                                        </div>
-                                        <div className='w-auto'>
-                                            <FaRegTrashAlt className='mr-auto text-[#4a5565a8]' />
-                                        </div>
+                {/* Produtos no Carrinho */}
+                <div className='h-2/5 overflow-y-auto px-10 py-4 space-y-5'>
+
+                    {/* Produto do carrinho */}
+                    <div className='flex pb-4 border-b border-[#4a556556]'>
+                        <img src="/Capa.png" className='h-22 rounded-lg' />
+                        <div className='flex mx-5 items-center'>
+                            <div className='space-y-2'>
+                                <div className='flex'>
+                                    <div className='w-full'>
+                                        <p className='text-md font-semibold font-montserrat -my-1'>Capa 13 Pro Max</p>
+                                        <span className='text-gray-500'>Vermelho</span>
                                     </div>
-                                    <div className='flex items-center space-x-5 text-md'>
-                                        <HiOutlineMinus className='size-6 border border-[#4a556556] rounded-sm hover:bg-gray-200' />
-                                        <span>1</span>
-                                        <IoIosAdd className='size-6 border border-[#4a556556] rounded-sm hover:bg-gray-200' />
-                                        <h6 className='text-nowrap'>R$ <span>20.00</span></h6>
+                                    <div className='w-auto'>
+                                        <FaRegTrashAlt className='mr-auto text-[#4a5565a8]' />
                                     </div>
+                                </div>
+                                <div className='flex items-center space-x-5 text-md'>
+                                    <HiOutlineMinus className='size-6 border border-[#4a556556] rounded-sm hover:bg-gray-200' />
+                                    <span>1</span>
+                                    <IoIosAdd className='size-6 border border-[#4a556556] rounded-sm hover:bg-gray-200' />
+                                    <h6 className='text-nowrap'>R$ <span>20.00</span></h6>
                                 </div>
                             </div>
                         </div>
-                        {/* Produto do carrinho */}
-                        <div className='flex pb-4 border-b border-[#4a556556]'>
-                            <img src="/Capa.png" className='h-22 rounded-lg' />
-                            <div className='flex mx-5 items-center'>
-                                <div className='space-y-2'>
-                                    <div className='flex'>
-                                        <div className='w-full'>
-                                            <h1 className='text-md font-semibold font-montserrat -my-1'>Capa 13 Pro Max</h1>
-                                            <span className='text-gray-500'>Vermelho</span>
-                                        </div>
-                                        <div className='w-auto'>
-                                            <FaRegTrashAlt className='mr-auto text-[#4a5565a8]' />
-                                        </div>
+                    </div>
+                    {/* Produto do carrinho */}
+                    <div className='flex pb-4 border-b border-[#4a556556]'>
+                        <img src="/Capa.png" className='h-22 rounded-lg' />
+                        <div className='flex mx-5 items-center'>
+                            <div className='space-y-2'>
+                                <div className='flex'>
+                                    <div className='w-full'>
+                                        <h1 className='text-md font-semibold font-montserrat -my-1'>Capa 13 Pro Max</h1>
+                                        <span className='text-gray-500'>Vermelho</span>
                                     </div>
-                                    <div className='flex items-center space-x-5 text-md'>
-                                        <HiOutlineMinus className='size-6 border border-[#4a556556] rounded-sm hover:bg-gray-200' />
-                                        <span>1</span>
-                                        <IoIosAdd className='size-6 border border-[#4a556556] rounded-sm hover:bg-gray-200' />
-                                        <h6 className='text-nowrap'>R$ <span>20.00</span></h6>
+                                    <div className='w-auto'>
+                                        <FaRegTrashAlt className='mr-auto text-[#4a5565a8]' />
                                     </div>
+                                </div>
+                                <div className='flex items-center space-x-5 text-md'>
+                                    <HiOutlineMinus className='size-6 border border-[#4a556556] rounded-sm hover:bg-gray-200' />
+                                    <span>1</span>
+                                    <IoIosAdd className='size-6 border border-[#4a556556] rounded-sm hover:bg-gray-200' />
+                                    <h6 className='text-nowrap'>R$ <span>20.00</span></h6>
                                 </div>
                             </div>
                         </div>
-                        {/* Produto do carrinho */}
-                        <div className='flex pb-4 border-b border-[#4a556556]'>
-                            <img src="/Capa.png" className='h-22 rounded-lg' />
-                            <div className='flex mx-5 items-center'>
-                                <div className='space-y-2'>
-                                    <div className='flex'>
-                                        <div className='w-full'>
-                                            <h1 className='text-md font-semibold font-montserrat -my-1'>Capa 13 Pro Max</h1>
-                                            <span className='text-gray-500'>Vermelho</span>
-                                        </div>
-                                        <div className='w-auto'>
-                                            <FaRegTrashAlt className='mr-auto text-[#4a5565a8]' />
-                                        </div>
+                    </div>
+                    {/* Produto do carrinho */}
+                    <div className='flex pb-4 border-b border-[#4a556556]'>
+                        <img src="/Capa.png" className='h-22 rounded-lg' />
+                        <div className='flex mx-5 items-center'>
+                            <div className='space-y-2'>
+                                <div className='flex'>
+                                    <div className='w-full'>
+                                        <h1 className='text-md font-semibold font-montserrat -my-1'>Capa 13 Pro Max</h1>
+                                        <span className='text-gray-500'>Vermelho</span>
                                     </div>
-                                    <div className='flex items-center space-x-5 text-md'>
-                                        <HiOutlineMinus className='size-6 border border-[#4a556556] rounded-sm hover:bg-gray-200' />
-                                        <span>1</span>
-                                        <IoIosAdd className='size-6 border border-[#4a556556] rounded-sm hover:bg-gray-200' />
-                                        <h6 className='text-nowrap'>R$ <span>20.00</span></h6>
+                                    <div className='w-auto'>
+                                        <FaRegTrashAlt className='mr-auto text-[#4a5565a8]' />
                                     </div>
+                                </div>
+                                <div className='flex items-center space-x-5 text-md'>
+                                    <HiOutlineMinus className='size-6 border border-[#4a556556] rounded-sm hover:bg-gray-200' />
+                                    <span>1</span>
+                                    <IoIosAdd className='size-6 border border-[#4a556556] rounded-sm hover:bg-gray-200' />
+                                    <h6 className='text-nowrap'>R$ <span>20.00</span></h6>
                                 </div>
                             </div>
                         </div>
-                        
                     </div>
 
-                    <div className='px-10 py-4 border-t border-[#4a556556]'>
-                        <div className='pb-4 space-y-5 border-b border-[#4a556556]'>
-                            <div className='flex justify-between text-md'>
-                                <p className='font-semibold'>Subtotal</p>
-                                <span className='font-bold'>R$ 20.00</span>
-                            </div>
-                            <div className='flex justify-between'>
-                                <p className='font-semibold'>Frete</p>
-                                <span className='font-bold text-[#00b7ff]'>Grátis</span>
-                            </div>
+                </div>
+
+                <div className='px-10 py-4 border-t border-[#4a556556]'>
+                    <div className='pb-4 space-y-5 border-b border-[#4a556556]'>
+                        <div className='flex justify-between text-md'>
+                            <p className='font-semibold'>Subtotal</p>
+                            <span className='font-bold'>R$ 20.00</span>
                         </div>
-                        <div className='flex py-4 justify-between'>
-                            <span className='font-semibold'>Total</span>
-                            <span className='font-bold text-[#00b7ff]'>R$ 20.00</span>
-                        </div>
-                        <div className='space-y-4'>
-                            <button className='block text-md text-white bg-[#00b7ff] w-full p-2 rounded-md'>
-                                Finalizar Compra
-                            </button>
-                            <button className='text-md border border-[#4a556556] w-full p-2 rounded-md'>
-                                Continuar Comprando
-                            </button>
+                        <div className='flex justify-between'>
+                            <p className='font-semibold'>Frete</p>
+                            <span className='font-bold text-[#00b7ff]'>Grátis</span>
                         </div>
                     </div>
+                    <div className='flex py-4 justify-between'>
+                        <span className='font-semibold'>Total</span>
+                        <span className='font-bold text-[#00b7ff]'>R$ 20.00</span>
+                    </div>
+                    <div className='space-y-4'>
+                        <button className='block text-md text-white bg-[#00b7ff] w-full p-2 rounded-md'>
+                            Finalizar Compra
+                        </button>
+                        <button className='text-md border border-[#4a556556] w-full p-2 rounded-md'>
+                            Continuar Comprando
+                        </button>
+                    </div>
+                </div>
             </div>
 
             {/* Menu de Opções */}
-            <div className='bg-white'>
+            <div className='bg-white z-3000'>
                 <div className={`flex fixed justify-center pt-26 p-3 px-6 space-x-1.5 bg-white w-full h-screen ${navMenuAberto ? "opacity-100 pointer-events-auto fixed" : "opacity-0 pointer-events-none"}`}>
                     <ul className='text-center px-6 w-full space-y-2'>
                         <li className='py-3 hover:bg-gray-300 rounded-lg'>Início</li>
