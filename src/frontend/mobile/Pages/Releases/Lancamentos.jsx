@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Releases() {
+function Lancamentos() {
   return (
     <section className='py-10 px-8'>
             <div className=' text-center space-y-1.5'>
@@ -32,4 +32,4 @@ function Releases() {
   )
 }
 
-export default Releases
+export default Lancamentos
