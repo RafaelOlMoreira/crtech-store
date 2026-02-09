@@ -4,10 +4,11 @@ import { createRoot } from 'react-dom/client'
 import './style.css'
 
 import Header from './frontend/mobile/Components/Header'
-import Carrousel from './frontend/mobile/Pages/Carrousel/Carrousel'
-import Categories from './frontend/mobile/Pages/Categories/Categories'
-import Offers from './frontend/mobile/Pages/Offers/Offers'
-import ReleasesProduct from './frontend/mobile/Pages/Releases/ReleasesProduct'
+import Carrousel from './frontend/mobile/Pages/CarouselSection/CarouselSection'
+import Categories from './frontend/mobile/Pages/CategoriesSection/CategoriesSection'
+import Offers from './frontend/mobile/Pages/OffersSection/OffersSection'
+import Releases from './frontend/mobile/Pages/ReleasesSection/ReleasesSection'
+import Reviews from './frontend/mobile/Pages/ReviewsSection/ReviewsSection'
 
 const slides = [
     "/Foto1.jpg",
@@ -26,7 +27,8 @@ createRoot(document.getElementById('root')).render(
     </Carrousel>
     <Categories />
     <Offers />
-    <ReleasesProduct />
+    <Releases />
+    <Reviews />
 
   </StrictMode>,
 )
