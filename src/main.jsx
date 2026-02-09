@@ -7,7 +7,7 @@ import Header from './frontend/mobile/Components/Header'
 import Carrousel from './frontend/mobile/Pages/Carrousel/Carrousel'
 import Categories from './frontend/mobile/Pages/Categories/Categories'
 import Offers from './frontend/mobile/Pages/Offers/Offers'
-import Lancamentos from './frontend/mobile/Pages/Releases/Lancamentos'
+import ReleasesProduct from './frontend/mobile/Pages/Releases/ReleasesProduct'
 
 const slides = [
     "/Foto1.jpg",
@@ -26,7 +26,7 @@ createRoot(document.getElementById('root')).render(
     </Carrousel>
     <Categories />
     <Offers />
-    <Lancamentos />
+    <ReleasesProduct />
 
   </StrictMode>,
 )
