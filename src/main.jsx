@@ -9,6 +9,7 @@ import Categories from './frontend/mobile/Pages/CategoriesSection/CategoriesSect
 import Offers from './frontend/mobile/Pages/OffersSection/OffersSection'
 import Releases from './frontend/mobile/Pages/ReleasesSection/ReleasesSection'
 import Reviews from './frontend/mobile/Pages/ReviewsSection/ReviewsSection'
+import EmailNews from './frontend/mobile/Pages/EmailNewsSection/EmailNews'
 
 const slides = [
     "/Foto1.jpg",
@@ -29,6 +30,7 @@ createRoot(document.getElementById('root')).render(
     <Offers />
     <Releases />
     <Reviews />
+    <EmailNews />
 
   </StrictMode>,
 )
