@@ -11,6 +11,7 @@ import Releases from './frontend/mobile/Pages/ReleasesSection/ReleasesSection'
 import Reviews from './frontend/mobile/Pages/ReviewsSection/ReviewsSection'
 import EmailNews from './frontend/mobile/Pages/EmailNewsSection/EmailNews'
 import StoreBenefits from './frontend/mobile/Pages/StoreBenefitsSection/StoreBenefits'
+import Footer from './frontend/mobile/Components/Footer'
 
 const slides = [
     "/Foto1.jpg",
@@ -33,6 +34,7 @@ createRoot(document.getElementById('root')).render(
     <Reviews />
     <EmailNews />
     <StoreBenefits />
+    <Footer />
 
   </StrictMode>,
 )
