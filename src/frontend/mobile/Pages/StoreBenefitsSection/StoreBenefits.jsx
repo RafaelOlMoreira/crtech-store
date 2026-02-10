@@ -13,7 +13,7 @@ function StoreBenefits() {
                     <FaTruck className='text-[#00B5FF] bg-[#00B5FF]/20 p-4 size-16 rounded-full' />
                     <div className='pt-3 text-center'>
                         <h1 className='font-bold'>Frete Grátis</h1>
-                        <span className='text-sm text-gray-600'>Aos fins de semana</span>
+                        <span className='text-sm text-[#94A3B8]'>Aos fins de semana</span>
                     </div>
                 </div>
                 {/* Compra Segura */}
@@ -21,7 +21,7 @@ function StoreBenefits() {
                     <GoShieldCheck className='text-[#00B5FF] bg-[#00B5FF]/20 p-4 size-16 rounded-full' />
                     <div className='pt-3 text-center'>
                         <h1 className='font-bold'>Frete Grátis</h1>
-                        <span className='text-sm text-gray-600'>Aos fins de semana</span>
+                        <span className='text-sm text-[#94A3B8]'>Aos fins de semana</span>
                     </div>
                 </div>
                 {/* Troca Grátis */}
@@ -29,7 +29,7 @@ function StoreBenefits() {
                     <GrReturn className='text-[#00B5FF] bg-[#00B5FF]/20 p-4 size-16 rounded-full' />
                     <div className='pt-3 text-center'>
                         <h1 className='font-bold'>Troca Grátis</h1>
-                        <span className='text-sm text-gray-600'>Até 30 dias</span>
+                        <span className='text-sm text-[#94A3B8]'>Até 30 dias</span>
                     </div>
                 </div>
                 {/* Suporte */}
@@ -37,7 +37,7 @@ function StoreBenefits() {
                     <PiHeadsetBold className='text-[#00B5FF] bg-[#00B5FF]/20 p-4 size-16 rounded-full' />
                     <div className='pt-3 text-center'>
                         <h1 className='font-bold'>Suporte 24/7</h1>
-                        <span className='text-sm text-gray-600'>Sempre disponível</span>
+                        <span className='text-sm text-[#94A3B8]'>Sempre disponível</span>
                     </div>
                 </div>
             </div>

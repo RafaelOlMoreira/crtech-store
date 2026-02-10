@@ -14,7 +14,7 @@ function Categories() {
                 <h1 className='text-3xl font-bold'>
                     Categorias
                 </h1>
-                <span className='text-md text-gray-700'>
+                <span className='text-md text-[#94A3B8]'>
                     Encontre os produtos perfeitos para você.
                 </span>
             </div>
@@ -27,7 +27,7 @@ function Categories() {
                         <FiSmartphone className='size-12 bg-[#00B5FF]/10 text-[#00B5FF] p-3 rounded-full' />
                         <div className='text-center text-md -space-y-1'>
                             <h6 className='font-semibold'>Capas</h6>
-                            <span className='text-[12px] text-gray-700'>56 Produtos</span>
+                            <span className='text-[12px] text-[#94A3B8]'>56 Produtos</span>
                         </div>
                     </div>
                 </a>
@@ -38,7 +38,7 @@ function Categories() {
                         <FaShieldAlt className='size-12 bg-[#00B5FF]/10 text-[#00B5FF] p-3 rounded-full' />
                         <div className='text-center text-md -space-y-1'>
                             <h6 className='font-semibold'>Películas</h6>
-                            <span className='text-[12px] text-gray-700'>112 Produtos</span>
+                            <span className='text-[12px] text-[#94A3B8]'>112 Produtos</span>
                         </div>
                     </div>
                 </a>
@@ -49,7 +49,7 @@ function Categories() {
                         <FaHeadphones className='size-12 bg-[#00B5FF]/10 text-[#00B5FF] p-3 rounded-full' />
                         <div className='text-center text-md -space-y-1'>
                             <h6 className='font-semibold'>Fones de Ouvido</h6>
-                            <span className='text-[12px] text-gray-700'>31 Produtos</span>
+                            <span className='text-[12px] text-[#94A3B8]'>31 Produtos</span>
                         </div>
                     </div>
                 </a>
@@ -60,7 +60,7 @@ function Categories() {
                         <FiBatteryCharging className='size-12 bg-[#00B5FF]/10 text-[#00B5FF] p-3 rounded-full' />
                         <div className='text-center text-md -space-y-1'>
                             <h6 className='font-semibold'>Carregadores</h6>
-                            <span className='text-[12px] text-gray-700'>19 Produtos</span>
+                            <span className='text-[12px] text-[#94A3B8]'>19 Produtos</span>
                         </div>
                     </div>
                 </a>
@@ -71,7 +71,7 @@ function Categories() {
                         <TbDeviceMobileSearch className='size-12 bg-[#00B5FF]/10 text-[#00B5FF] p-3 rounded-full' />
                         <div className='text-center text-md -space-y-1'>
                             <h6 className='font-semibold'>Acessorios</h6>
-                            <span className='text-[12px] text-gray-700'>24 Produtos</span>
+                            <span className='text-[12px] text-[#94A3B8]'>24 Produtos</span>
                         </div>
                     </div>
                 </a>
@@ -82,7 +82,7 @@ function Categories() {
                         <MdOutlineMiscellaneousServices className='size-12 bg-[#00B5FF]/10 text-[#00B5FF] p-3 rounded-full' />
                         <div className='text-center text-md -space-y-1'>
                             <h6 className='font-semibold'>Serviços</h6>
-                            <span className='text-[12px] text-gray-700'>2 Serviços</span>
+                            <span className='text-[12px] text-[#94A3B8]'>2 Serviços</span>
                         </div>
                     </div>
                 </a>

@@ -52,7 +52,7 @@ function Header() {
             <div className={`z-3000 fixed inset-0 bg-white h-screen overflow-y-auto w-full ${carrinhoMenuAberto ? "opacity-100 pointer-events-auto fixed" : "opacity-0 pointer-events-none"}`}>
                 <div className='flex items-center px-10 h-16 w-full border-b border-gray-400'>
                     <h1 className='font-bebasneue font-bold text-xl'>Carrinho de Compras</h1>
-                    <IoIosClose className='size-10 ml-auto text-gray-400' onClick={() => setCarrinhoMenuAberto(!carrinhoMenuAberto)} />
+                    <IoIosClose className='size-10 ml-auto text-[#94A3B8]' onClick={() => setCarrinhoMenuAberto(!carrinhoMenuAberto)} />
                 </div>
 
                 {/* Produtos no Carrinho */}
@@ -66,7 +66,7 @@ function Header() {
                                 <div className='flex'>
                                     <div className='w-full'>
                                         <p className='text-md font-semibold font-montserrat -my-1'>Capa 13 Pro Max</p>
-                                        <span className='text-gray-500'>Vermelho</span>
+                                        <span className='text-[#94A3B8]'>Vermelho</span>
                                     </div>
                                     <div className='w-auto'>
                                         <FaRegTrashAlt className='mr-auto text-[#4a5565a8]' />
@@ -89,7 +89,7 @@ function Header() {
                                 <div className='flex'>
                                     <div className='w-full'>
                                         <h1 className='text-md font-semibold font-montserrat -my-1'>Capa 13 Pro Max</h1>
-                                        <span className='text-gray-500'>Vermelho</span>
+                                        <span className='text-[#94A3B8]'>Vermelho</span>
                                     </div>
                                     <div className='w-auto'>
                                         <FaRegTrashAlt className='mr-auto text-[#4a5565a8]' />
@@ -112,7 +112,7 @@ function Header() {
                                 <div className='flex'>
                                     <div className='w-full'>
                                         <h1 className='text-md font-semibold font-montserrat -my-1'>Capa 13 Pro Max</h1>
-                                        <span className='text-gray-500'>Vermelho</span>
+                                        <span className='text-[#94A3B8]'>Vermelho</span>
                                     </div>
                                     <div className='w-auto'>
                                         <FaRegTrashAlt className='mr-auto text-[#4a5565a8]' />

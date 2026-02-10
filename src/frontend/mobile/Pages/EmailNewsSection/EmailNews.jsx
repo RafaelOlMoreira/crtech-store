@@ -7,7 +7,7 @@ function EmailNews() {
             <div className='text-center text-white flex flex-col items-center space-y-1.5'>
                 <MdMailOutline className='text-[#00B5FF] size-14' />
                 <h1 className='text-2xl font-bold'>Fique Por Dentro Das Novidades</h1>
-                <span className='text-gray-400'>Receba orfetas exclusivas, lançamentos e dicas diretamente no seu e-mail</span>
+                <span className='text-[#94A3B8]'>Receba orfetas exclusivas, lançamentos e dicas diretamente no seu e-mail</span>
             </div>
             <div className='space-y-2 pt-4'>
                 <input type="email" placeholder='Digite seu melhor e-mail' className='bg-white w-full p-4 rounded-lg' />
@@ -15,7 +15,7 @@ function EmailNews() {
                     Inscreva-se
                 </button>
             </div>
-            <span className='text-gray-400 text-sm'>Ao se inscrever, você concorda com nossa Política de Privacidade</span>
+            <span className='text-[#94A3B8] text-sm'>Ao se inscrever, você concorda com nossa Política de Privacidade</span>
         </section>
     )
 }

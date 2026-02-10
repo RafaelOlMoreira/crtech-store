@@ -28,7 +28,7 @@ function Offers() {
                         </div>
                         <div className='space-x-2.5'>
                             <span className='text-xl font-bold'>R$ 15.00</span>
-                            <span className='text-gray-700 line-through'>R$ 20.00</span>
+                            <span className='text-[#94A3B8] line-through'>R$ 20.00</span>
                         </div>
                         <button className='bg-[#00B5FF] w-full p-1.5 text-white text-md rounded-lg'>Adicionar ao Carrinho</button>
                     </div>

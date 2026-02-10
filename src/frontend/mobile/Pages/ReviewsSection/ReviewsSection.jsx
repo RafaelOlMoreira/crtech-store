@@ -6,7 +6,7 @@ function Reviews() {
     <section className='py-10 px-8 bg-gray-100/50'>
       <div className='text-center space-y-2'>
         <h1 className='text-2xl font-bold'>O Que Nossos Clientes Dizem</h1>
-        <span className='text-gray-500'>Avaliações reais de clientes satisfeitos</span>
+        <span className='text-[#94A3B8]'>Avaliações reais de clientes satisfeitos</span>
       </div>
 
       <div className='py-12 space-y-5'>
