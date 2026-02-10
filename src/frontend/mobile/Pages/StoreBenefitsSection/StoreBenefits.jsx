@@ -20,8 +20,8 @@ function StoreBenefits() {
                 <div className='flex flex-col items-center'>
                     <GoShieldCheck className='text-[#00B5FF] bg-[#00B5FF]/20 p-4 size-16 rounded-full' />
                     <div className='pt-3 text-center'>
-                        <h1 className='font-bold'>Frete Grátis</h1>
-                        <span className='text-sm text-[#94A3B8]'>Aos fins de semana</span>
+                        <h1 className='font-bold'>Compra Segura</h1>
+                        <span className='text-sm text-[#94A3B8]'>Proteção total</span>
                     </div>
                 </div>
                 {/* Troca Grátis */}
