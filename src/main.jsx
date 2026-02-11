@@ -13,6 +13,8 @@ import EmailNews from './frontend/mobile/Pages/EmailNewsSection/EmailNews'
 import StoreBenefits from './frontend/mobile/Pages/StoreBenefitsSection/StoreBenefits'
 import Footer from './frontend/mobile/Components/Footer'
 
+import Login from './frontend/mobile/Pages/Login/Login'
+
 const slides = [
     "/Foto1.jpg",
     "/Foto2.jpg",
@@ -22,7 +24,9 @@ const slides = [
 createRoot(document.getElementById('root')).render(
   <StrictMode>
 
-    <Header />
+    <Login />
+
+    {/* <Header />
     <Carrousel autoSlide={true}>
       {slides.map((s) => (
         <img src={s} />
@@ -34,7 +38,7 @@ createRoot(document.getElementById('root')).render(
     <Reviews />
     <EmailNews />
     <StoreBenefits />
-    <Footer />
+    <Footer /> */}
 
   </StrictMode>,
 )
