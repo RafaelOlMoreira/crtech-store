@@ -14,6 +14,7 @@ import StoreBenefits from './frontend/mobile/Pages/StoreBenefitsSection/StoreBen
 import Footer from './frontend/mobile/Components/Footer'
 
 import Login from './frontend/mobile/Pages/Login/Login'
+import Cheackout from './frontend/mobile/Pages/Checkout/Cheackout'
 
 const slides = [
     "/Foto1.jpg",
@@ -24,21 +25,23 @@ const slides = [
 createRoot(document.getElementById('root')).render(
   <StrictMode>
 
-    <Login />
 
-    {/* <Header />
+    <Header />
     <Carrousel autoSlide={true}>
       {slides.map((s) => (
         <img src={s} />
-      ))}
-    </Carrousel>
+        ))}
+        </Carrousel>
     <Categories />
     <Offers />
     <Releases />
     <Reviews />
     <EmailNews />
     <StoreBenefits />
-    <Footer /> */}
+    <Footer />
+    
+    {/* <Login /> */}
+    {/* <Cheackout /> */}
 
   </StrictMode>,
 )
