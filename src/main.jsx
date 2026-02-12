@@ -13,9 +13,6 @@ import EmailNews from './frontend/mobile/Pages/EmailNewsSection/EmailNews'
 import StoreBenefits from './frontend/mobile/Pages/StoreBenefitsSection/StoreBenefits'
 import Footer from './frontend/mobile/Components/Footer'
 
-import Login from './frontend/mobile/Pages/Login/Login'
-import Cheackout from './frontend/mobile/Pages/Checkout/Cheackout'
-
 const slides = [
     "/Foto1.jpg",
     "/Foto2.jpg",
