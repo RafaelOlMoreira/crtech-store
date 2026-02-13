@@ -1,4 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 import { FiShoppingBag } from "react-icons/fi";
 import { IoLocationOutline } from "react-icons/io5";
@@ -40,7 +41,9 @@ function Checkout() {
         <div className='flex flex-col items-center pb-24 bg-[#94A3B8]/20'>
             <div className='p-5 space-y-4'>
                 <div className='flex items-center mr-auto space-x-2.5'>
-                    <FiShoppingBag className='size-10 p-2 bg-[#00B5FF] text-white rounded-xl' />
+                    <Link to="/">
+                        <FiShoppingBag className='size-10 p-2 bg-[#00B5FF] text-white rounded-xl' />
+                    </Link>
                     <h1 className='font-bold text-xl'>Checkout</h1>
                 </div>
 
@@ -239,7 +242,7 @@ function Checkout() {
                     </div>
                 </div>
             </div>
-            
+
             <footer className='fixed bottom-0 flex items-center justify-center bg-white w-full py-4 border-t border-[#94A3B8]'>
                 <button className='bg-[#00B5FF] w-3/4 p-3 rounded-lg text-white font-semibold'>Finalizar Pedido</button>
             </footer>

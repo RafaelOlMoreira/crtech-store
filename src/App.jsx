@@ -10,6 +10,14 @@ import EmailNews from './frontend/mobile/Pages/EmailNewsSection/EmailNews'
 import StoreBenefits from './frontend/mobile/Pages/StoreBenefitsSection/StoreBenefits'
 import Footer from './frontend/mobile/Components/Footer'
 
+import Checkout from './frontend/mobile/Pages/Checkout/Checkout'
+
+const slides = [
+    "/Foto1.jpg",
+    "/Foto2.jpg",
+    "/Foto3.jpg",
+]
+
 function App() {
     return (
         <>
@@ -31,13 +39,8 @@ function App() {
                         <Footer />
                     </>
                 } />
-                
-                {/* <Route path="/login" element={<Login />} />
-                <Route path="/pedidos" element={<Pedidos />} />
-                <Route path="/conta" element={<Conta />} />
-                <Route path="/sacola" element={<Sacola />} />
-                <Route path="/finalcompra" element={<FinalCompra />} />
-                <Route path="/desejos" element={<Desejos />} /> */}
+
+                <Route path="/checkout" element={<Checkout />} />
 
             </Routes>
         </>

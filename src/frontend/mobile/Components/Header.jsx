@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom';
 
 import { RiShoppingCartLine } from "react-icons/ri";
 import { FiSearch } from "react-icons/fi";
@@ -144,14 +145,16 @@ function Header() {
                         <span className='font-semibold'>Total</span>
                         <span className='font-bold text-[#00b7ff]'>R$ 20.00</span>
                     </div>
-                    <div className='space-y-4'>
-                        <button className='block text-md text-white bg-[#00b7ff] w-full p-2 rounded-md'>
-                            Finalizar Compra
-                        </button>
-                        <button className='text-md border border-[#4a556556] w-full p-2 rounded-md'>
-                            Continuar Comprando
-                        </button>
-                    </div>
+                        <Link to="/checkout">
+                            <button className='block my-4 text-md text-white bg-[#00b7ff] w-full p-2 rounded-md'>
+                                Finalizar Compra
+                            </button>
+                        </Link>
+                        <Link to="/">
+                            <button className='text-md border border-[#4a556556] w-full p-2 rounded-md'>
+                                Continuar Comprando
+                            </button>
+                        </Link>
                 </div>
             </div>
 
