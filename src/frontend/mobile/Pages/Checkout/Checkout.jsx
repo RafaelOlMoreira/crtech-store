@@ -9,7 +9,7 @@ import { GoTag } from "react-icons/go";
 
 import Capa from "/Capa.png";
 
-function Cheackout() {
+function Checkout() {
 
     const [activeFrete, setActiveFrete] = useState('frete');
     const [activePagamento, setActivePagamento] = useState('cartao');
@@ -248,4 +248,4 @@ function Cheackout() {
     )
 }
 
-export default Cheackout
+export default Checkout

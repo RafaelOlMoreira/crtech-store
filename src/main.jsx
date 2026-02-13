@@ -1,47 +1,19 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-
+import { BrowserRouter } from 'react-router-dom';
+import App from './App.jsx';
 import './style.css'
 
-import Header from './frontend/mobile/Components/Header'
-import Carrousel from './frontend/mobile/Pages/CarouselSection/CarouselSection'
-import Categories from './frontend/mobile/Pages/CategoriesSection/CategoriesSection'
-import Offers from './frontend/mobile/Pages/OffersSection/OffersSection'
-import Releases from './frontend/mobile/Pages/ReleasesSection/ReleasesSection'
-import Reviews from './frontend/mobile/Pages/ReviewsSection/ReviewsSection'
-import EmailNews from './frontend/mobile/Pages/EmailNewsSection/EmailNews'
-import StoreBenefits from './frontend/mobile/Pages/StoreBenefitsSection/StoreBenefits'
-import Footer from './frontend/mobile/Components/Footer'
-
-import Login from './frontend/mobile/Pages/Login/Login'
-import Cheackout from './frontend/mobile/Pages/Checkout/Cheackout'
-
 const slides = [
-    "/Foto1.jpg",
-    "/Foto2.jpg",
-    "/Foto3.jpg",
+  "/Foto1.jpg",
+  "/Foto2.jpg",
+  "/Foto3.jpg",
 ]
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-
-
-    {/* <Header />
-    <Carrousel autoSlide={true}>
-      {slides.map((s) => (
-        <img src={s} />
-        ))}
-        </Carrousel>
-    <Categories />
-    <Offers />
-    <Releases />
-    <Reviews />
-    <EmailNews />
-    <StoreBenefits />
-    <Footer /> */}
-    
-    {/* <Login /> */}
-    <Cheackout />
-
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
   </StrictMode>,
 )

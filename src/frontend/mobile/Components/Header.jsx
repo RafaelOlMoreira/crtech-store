@@ -8,7 +8,6 @@ import { HiOutlineMinus } from "react-icons/hi2";
 import { IoIosAdd } from "react-icons/io";
 import { FaRegTrashAlt } from "react-icons/fa";
 
-
 function Header() {
 
     const [searchMenuAberto, setSearchMenuAberto] = useState(false);
