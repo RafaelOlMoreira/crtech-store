@@ -18,7 +18,7 @@ function Header() {
     return (
         <div>
             <header className='fixed z-2000 flex items-center bg-white px-4 py-6 w-full'>
-                <img src="/CR Tech.png" className='h-10 object-cover' />
+                <img src="/CR Tech Black.png" className='h-5 object-cover' />
 
                 <div className='w-full'>
                     <ul className='flex items-center justify-end space-x-6'>
