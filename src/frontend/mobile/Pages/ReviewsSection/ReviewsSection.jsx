@@ -41,8 +41,8 @@ function Reviews() {
             </div>
           </div>
           <div className='flex flex-col space-y-2'>
-            <span className='text-md'>Comprei uma capinha para meu A15 e a experiência foi incrível! Entrega rápida e produto original. Recomendo muito!</span>
-            <span className='text-sm text-[#00B5FF]'>Capa Samsung A15</span>
+            <span className='text-md'>Comprei os AirPods 2 Pro e estou impressionado com a qualidade do som e o acabamento. Entrega rápida, embalagem perfeita e produto original, super recomendo!</span>
+            <span className='text-sm text-[#00B5FF]'>AirPods 2 Pro</span>
           </div>
         </div>
         
@@ -59,8 +59,8 @@ function Reviews() {
             </div>
           </div>
           <div className='flex flex-col space-y-2'>
-            <span className='text-md'>Comprei uma capinha para meu A15 e a experiência foi incrível! Entrega rápida e produto original. Recomendo muito!</span>
-            <span className='text-sm text-[#00B5FF]'>Capa Samsung A15</span>
+            <span className='text-md'>Comprei uma capa para iPhone 12 e ficou perfeita: ajuste exato, material resistente e visual bonito. Chegou rápido e em ótimo estado, recomendo muito!</span>
+            <span className='text-sm text-[#00B5FF]'>Capa iPhone 12</span>
           </div>
         </div>
         
@@ -77,8 +77,8 @@ function Reviews() {
             </div>
           </div>
           <div className='flex flex-col space-y-2'>
-            <span className='text-md'>Comprei uma capinha para meu A15 e a experiência foi incrível! Entrega rápida e produto original. Recomendo muito!</span>
-            <span className='text-sm text-[#00B5FF]'>Capa Samsung A15</span>
+            <span className='text-md'>Comprei a película para iPhone 15 Pro Max e a instalação foi simples, sem bolhas e com ótima transparência. Entrega rápida e produto de qualidade!</span>
+            <span className='text-sm text-[#00B5FF]'>Película iPhone 15 Pro Max</span>
           </div>
         </div>
 
