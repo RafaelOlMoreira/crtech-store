@@ -8,7 +8,7 @@ import { MdOutlineMiscellaneousServices } from "react-icons/md";
 
 function Categories() {
     return (
-        <section className='bg-gray-300/20 py-10 px-8'>
+        <section id='categorias' className='bg-gray-300/20 py-10 px-8'>
             {/* Info Section */}
             <div className='flex-col text-center space-y-2.5'>
                 <h1 className='text-3xl font-bold'>

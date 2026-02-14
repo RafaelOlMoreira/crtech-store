@@ -6,7 +6,7 @@ import { IoLogoWhatsapp } from "react-icons/io";
 
 function Footer() {
   return (
-    <footer className='bg-gray-800 py-10 px-4'>
+    <footer id='contato' className='bg-gray-800 py-10 px-4'>
       <div className='text-[#94A3B8] space-y-3'>
         <img src={Logo} className='h-8 object-cover' />
         <span className='text-md'>

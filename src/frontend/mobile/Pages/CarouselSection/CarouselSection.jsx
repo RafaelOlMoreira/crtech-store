@@ -21,7 +21,7 @@ function Carrousel({
     }, [])
 
     return (
-        <div className='-z-10 pt-24 overflow-hidden relative'>
+        <div id='inicio' className='-z-10 pt-24 overflow-hidden relative'>
             <div className='flex transition-transform ease-out duration-500' style={{ transform: `translateX(-${curr * 100}%)` }} >{slides}</div>
             {/* <div className='absolute inset-0 flex items-center justify-between p-4' >
                 <button onClick={anterior} className='rounded-full p-0.5 shadow bg-white/50 text-black hover:bg-white/60'>

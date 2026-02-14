@@ -162,11 +162,21 @@ function Header() {
             <div className='bg-white z-3000'>
                 <div className={`flex fixed justify-center pt-26 p-3 px-6 space-x-1.5 bg-white w-full h-screen ${navMenuAberto ? "opacity-100 pointer-events-auto fixed" : "opacity-0 pointer-events-none"}`}>
                     <ul className='text-center px-6 w-full space-y-2'>
-                        <li className='py-3 hover:bg-gray-300 rounded-lg'>Início</li>
-                        <li className='py-3 hover:bg-gray-300 rounded-lg'>Acessórios</li>
-                        <li className='py-3 hover:bg-gray-300 rounded-lg'>Ofertas</li>
-                        <li className='py-3 hover:bg-gray-300 rounded-lg'>Lançamentos</li>
-                        <li className='py-3 hover:bg-gray-300 rounded-lg'>Contato</li>
+                        <a href="#inicio" onClick={() => setNavMenuAberto(!navMenuAberto)}>
+                            <li className='py-3 hover:bg-gray-300 rounded-lg'>Início</li>
+                        </a>
+                        <a href="#categorias" onClick={() => setNavMenuAberto(!navMenuAberto)}>
+                            <li className='py-3 hover:bg-gray-300 rounded-lg'>Categorias</li>
+                        </a>
+                        <a href="#ofertas" onClick={() => setNavMenuAberto(!navMenuAberto)}>
+                            <li className='py-3 hover:bg-gray-300 rounded-lg'>Ofertas</li>
+                        </a>
+                        <a href="#lançamentos" onClick={() => setNavMenuAberto(!navMenuAberto)}>
+                            <li className='py-3 hover:bg-gray-300 rounded-lg'>Lançamentos</li>
+                        </a>
+                        <a href="#contato" onClick={() => setNavMenuAberto(!navMenuAberto)}>
+                            <li className='py-3 hover:bg-gray-300 rounded-lg'>Contato</li>
+                        </a>
                         <Link to="/login">
                             <li className='py-3 hover:bg-gray-300 rounded-lg'>Minha Conta</li>
                         </Link>
