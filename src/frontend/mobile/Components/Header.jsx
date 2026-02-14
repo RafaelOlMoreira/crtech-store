@@ -51,7 +51,7 @@ function Header() {
             {/* Menu Carrinho */}
             <div className={`z-3000 fixed inset-0 bg-white h-screen overflow-y-auto w-full ${carrinhoMenuAberto ? "opacity-100 pointer-events-auto fixed" : "opacity-0 pointer-events-none"}`}>
                 <div className='flex items-center px-10 h-16 w-full border-b border-gray-400'>
-                    <h1 className='font-bebasneue font-bold text-xl'>Carrinho de Compras</h1>
+                    <h1 className='font-bold text-xl'>Carrinho de Compras</h1>
                     <IoIosClose className='size-10 ml-auto text-[#94A3B8]' onClick={() => setCarrinhoMenuAberto(!carrinhoMenuAberto)} />
                 </div>
 
@@ -65,8 +65,8 @@ function Header() {
                             <div className='space-y-2'>
                                 <div className='flex'>
                                     <div className='w-full'>
-                                        <p className='text-md font-semibold font-montserrat -my-1'>Capa 13 Pro Max</p>
-                                        <span className='text-[#94A3B8]'>Vermelho</span>
+                                        <p className='text-md font-semibold -my-1'>Capa 13 Pro Max</p>
+                                        <span className='text-[#94A3B8] text-sm'>Vermelho</span>
                                     </div>
                                     <div className='w-auto'>
                                         <FaRegTrashAlt className='mr-auto text-[#4a5565a8]' />
@@ -88,8 +88,8 @@ function Header() {
                             <div className='space-y-2'>
                                 <div className='flex'>
                                     <div className='w-full'>
-                                        <h1 className='text-md font-semibold font-montserrat -my-1'>Capa 13 Pro Max</h1>
-                                        <span className='text-[#94A3B8]'>Vermelho</span>
+                                        <h1 className='text-md font-semibold -my-1'>Capa 13 Pro Max</h1>
+                                        <span className='text-[#94A3B8] text-sm'>Vermelho</span>
                                     </div>
                                     <div className='w-auto'>
                                         <FaRegTrashAlt className='mr-auto text-[#4a5565a8]' />
@@ -111,8 +111,8 @@ function Header() {
                             <div className='space-y-2'>
                                 <div className='flex'>
                                     <div className='w-full'>
-                                        <h1 className='text-md font-semibold font-montserrat -my-1'>Capa 13 Pro Max</h1>
-                                        <span className='text-[#94A3B8]'>Vermelho</span>
+                                        <h1 className='text-md font-semibold -my-1'>Capa 13 Pro Max</h1>
+                                        <span className='text-[#94A3B8] text-sm'>Vermelho</span>
                                     </div>
                                     <div className='w-auto'>
                                         <FaRegTrashAlt className='mr-auto text-[#4a5565a8]' />
@@ -145,16 +145,16 @@ function Header() {
                         <span className='font-semibold'>Total</span>
                         <span className='font-bold text-[#00b7ff]'>R$ 20.00</span>
                     </div>
-                        <Link to="/checkout">
-                            <button className='block my-4 text-md text-white bg-[#00b7ff] w-full p-2 rounded-md'>
-                                Finalizar Compra
-                            </button>
-                        </Link>
-                        <Link to="/">
-                            <button className='text-md border border-[#4a556556] w-full p-2 rounded-md'>
-                                Continuar Comprando
-                            </button>
-                        </Link>
+                    <Link to="/checkout">
+                        <button className='block my-4 text-md text-white bg-[#00b7ff] w-full p-2 rounded-md'>
+                            Finalizar Compra
+                        </button>
+                    </Link>
+                    <Link to="/">
+                        <button onClick={() => setCarrinhoMenuAberto(!carrinhoMenuAberto)} className='text-md border border-[#4a556556] w-full p-2 rounded-md'>
+                            Continuar Comprando
+                        </button>
+                    </Link>
                 </div>
             </div>
 
@@ -167,6 +167,9 @@ function Header() {
                         <li className='py-3 hover:bg-gray-300 rounded-lg'>Ofertas</li>
                         <li className='py-3 hover:bg-gray-300 rounded-lg'>Lançamentos</li>
                         <li className='py-3 hover:bg-gray-300 rounded-lg'>Contato</li>
+                        <Link to="/login">
+                            <li className='py-3 hover:bg-gray-300 rounded-lg'>Minha Conta</li>
+                        </Link>
                     </ul>
                 </div>
             </div>

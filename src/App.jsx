@@ -11,6 +11,7 @@ import StoreBenefits from './frontend/mobile/Pages/StoreBenefitsSection/StoreBen
 import Footer from './frontend/mobile/Components/Footer'
 
 import Checkout from './frontend/mobile/Pages/Checkout/Checkout'
+import Login from './frontend/mobile/Pages/Login/Login'
 
 const slides = [
     "/Foto1.jpg",
@@ -41,6 +42,7 @@ function App() {
                 } />
 
                 <Route path="/checkout" element={<Checkout />} />
+                <Route path="/login" element={<Login />} />
 
             </Routes>
         </>
