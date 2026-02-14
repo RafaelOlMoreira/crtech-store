@@ -12,6 +12,7 @@ import Footer from './frontend/mobile/Components/Footer'
 
 import Checkout from './frontend/mobile/Pages/Checkout/Checkout'
 import Login from './frontend/mobile/Pages/Login/Login'
+import HeaderDesktop from './frontend/desktop/Components/HeaderDesktop';
 
 const slides = [
     "/Foto1.jpg",
@@ -25,7 +26,13 @@ function App() {
             <Routes>
                 <Route path="/" element={
                     <>
-                        <Header />
+                        <div className='hidden md:block'>
+                            <HeaderDesktop />
+                        </div>
+                        <div className='block md:hidden'>
+                            <Header />
+                        </div>
+
                         <Carrousel autoSlide={true}>
                             {slides.map((s) => (
                                 <img src={s} />
