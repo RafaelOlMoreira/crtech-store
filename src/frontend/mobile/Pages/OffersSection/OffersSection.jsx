@@ -7,7 +7,7 @@ function Offers() {
     const TempoOferta = (12 * 60 + 35) * 60 * 1000;
 
     return (
-        <section id='ofertas' className='bg-[#00B5FF]/90 py-10 px-8'>
+        <section id='ofertas' className='scroll-mt-32 bg-[#00B5FF]/90 py-10 px-8'>
             <div className='text-white text-center space-y-1.5'>
                 <h1 className='font-bold text-3xl'>Ofertas Relâmpago</h1>
                 <Countdown duration={TempoOferta} />

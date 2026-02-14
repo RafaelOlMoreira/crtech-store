@@ -2,7 +2,7 @@ import React from 'react'
 
 function Releases() {
   return (
-    <section id='lançamentos' className='py-10 px-8'>
+    <section id='lançamentos' className='scroll-mt-32 py-10 px-8'>
             <div className=' text-center space-y-1.5'>
                 <h1 className='font-bold text-3xl'>Lançamentos</h1>
                 <span className='text-md'>Aproveite os produtos mais recentes!</span>
