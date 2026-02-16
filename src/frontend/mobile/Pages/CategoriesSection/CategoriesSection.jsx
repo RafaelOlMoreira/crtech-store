@@ -19,10 +19,10 @@ function Categories() {
                 </span>
             </div>
             {/* Grid de Categorias */}
-            <div className='grid grid-cols-2 gap-4 py-10'>
+            <div className='grid grid-cols-2 md:grid-cols-none md:flex md:justify-center gap-4 py-10'>
 
                 {/* Categoria de Capinhas */}
-                <a href='#' className='bg-white border border-gray-500/30 rounded-lg p-5 shadow'>
+                <a href='#' className='bg-white md:w-44 border border-gray-500/30 rounded-lg p-5 shadow'>
                     <div className='flex flex-col justify-center items-center space-y-4'>
                         <FiSmartphone className='size-12 bg-[#00B5FF]/10 text-[#00B5FF] p-3 rounded-full' />
                         <div className='text-center text-md -space-y-1'>
@@ -33,7 +33,7 @@ function Categories() {
                 </a>
 
                 {/* Categoria de Películas */}
-                <a href='#' className='bg-white border border-gray-500/30 rounded-lg p-5 shadow'>
+                <a href='#' className='bg-white md:w-44 border border-gray-500/30 rounded-lg p-5 shadow'>
                     <div className='flex flex-col justify-center items-center space-y-4'>
                         <FaShieldAlt className='size-12 bg-[#00B5FF]/10 text-[#00B5FF] p-3 rounded-full' />
                         <div className='text-center text-md -space-y-1'>
@@ -44,7 +44,7 @@ function Categories() {
                 </a>
 
                 {/* Categoria de Fones de Ouvido */}
-                <a href='#' className='bg-white border border-gray-500/30 rounded-lg p-5 shadow'>
+                <a href='#' className='bg-white md:w-44 border border-gray-500/30 rounded-lg p-5 shadow'>
                     <div className='flex flex-col justify-center items-center space-y-4'>
                         <FaHeadphones className='size-12 bg-[#00B5FF]/10 text-[#00B5FF] p-3 rounded-full' />
                         <div className='text-center text-md -space-y-1'>
@@ -55,7 +55,7 @@ function Categories() {
                 </a>
 
                 {/* Categoria de Carregadores */}
-                <a href='#' className='bg-white border border-gray-500/30 rounded-lg p-5 shadow'>
+                <a href='#' className='bg-white md:w-44 border border-gray-500/30 rounded-lg p-5 shadow'>
                     <div className='flex flex-col justify-center items-center space-y-4'>
                         <FiBatteryCharging className='size-12 bg-[#00B5FF]/10 text-[#00B5FF] p-3 rounded-full' />
                         <div className='text-center text-md -space-y-1'>
@@ -66,7 +66,7 @@ function Categories() {
                 </a>
 
                 {/* Categoria de Acessorios */}
-                <a href='#' className='bg-white border border-gray-500/30 rounded-lg p-5 shadow'>
+                <a href='#' className='bg-white md:w-44 border border-gray-500/30 rounded-lg p-5 shadow'>
                     <div className='flex flex-col justify-center items-center space-y-4'>
                         <TbDeviceMobileSearch className='size-12 bg-[#00B5FF]/10 text-[#00B5FF] p-3 rounded-full' />
                         <div className='text-center text-md -space-y-1'>
@@ -77,7 +77,7 @@ function Categories() {
                 </a>
 
                 {/* Categoria de Serviços */}
-                <a href='#' className='bg-white border border-gray-500/30 rounded-lg p-5 shadow'>
+                <a href='#' className='bg-white md:w-44 border border-gray-500/30 rounded-lg p-5 shadow'>
                     <div className='flex flex-col justify-center items-center space-y-4'>
                         <MdOutlineMiscellaneousServices className='size-12 bg-[#00B5FF]/10 text-[#00B5FF] p-3 rounded-full' />
                         <div className='text-center text-md -space-y-1'>
