@@ -48,113 +48,71 @@ function Header() {
                 <FiSearch className='size-10 text-white bg-[#00B5FF] p-2 rounded-lg' />
             </div>
 
-            {/* Menu Carrinho */}
-            <div className={`z-3000 fixed inset-0 bg-white h-screen overflow-y-auto w-full ${carrinhoMenuAberto ? "opacity-100 pointer-events-auto fixed" : "opacity-0 pointer-events-none"}`}>
-                <div className='flex items-center px-10 h-16 w-full border-b border-gray-400'>
-                    <h1 className='font-bold text-xl'>Carrinho de Compras</h1>
-                    <IoIosClose className='size-10 ml-auto text-[#94A3B8]' onClick={() => setCarrinhoMenuAberto(!carrinhoMenuAberto)} />
-                </div>
+            {/* Menu carrinho */}
+            <div className={`z-3000 fixed ml-auto inset-0 bg-white md:border-l md:border-[#4a556556] h-screen w-full md:w-1/3 ${carrinhoMenuAberto ? "opacity-100 pointer-events-auto fixed" : "opacity-0 pointer-events-none"}`}>
+                <div className='flex flex-col h-full'>
 
-                {/* Produtos no Carrinho */}
-                <div className='h-2/5 overflow-y-auto px-10 py-4 space-y-5'>
+                    <div className='flex items-center px-10 h-16 w-full border-b border-[#4a556556]'>
+                        <h1 className='font-bold text-xl'>Carrinho de Compras</h1>
+                        <IoIosClose className='size-10 ml-auto text-[#94A3B8] hover:cursor-pointer' onClick={() => setCarrinhoMenuAberto(!carrinhoMenuAberto)} />
+                    </div>
 
-                    {/* Produto do carrinho */}
-                    <div className='flex pb-4 border-b border-[#4a556556]'>
-                        <img src="/Capa.png" className='h-22 rounded-lg' />
-                        <div className='flex mx-5 items-center'>
-                            <div className='space-y-2'>
-                                <div className='flex'>
-                                    <div className='w-full'>
-                                        <p className='text-md font-semibold -my-1'>Capa 13 Pro Max</p>
-                                        <span className='text-[#94A3B8] text-sm'>Vermelho</span>
+                    {/* Produtos no Carrinho */}
+                    <div className='flex-1 overflow-y-auto px-10 py-4 space-y-5'>
+
+                        {/* Produto do carrinho */}
+                        <div className='flex justify-evenly pb-4 border-b border-[#4a556556]'>
+                            <img src="/Capa.png" className='h-22 rounded-lg' />
+                            <div className='flex mx-5 items-center'>
+                                <div className='space-y-2'>
+                                    <div className='flex'>
+                                        <div className='w-full'>
+                                            <p className='text-md font-semibold -my-1'>Capa 13 Pro Max</p>
+                                            <span className='text-[#94A3B8] text-sm'>Vermelho</span>
+                                        </div>
+                                        <div className='w-auto'>
+                                            <FaRegTrashAlt className='mr-auto text-[#4a5565a8] hover:text-gray-700 hover:cursor-pointer' />
+                                        </div>
                                     </div>
-                                    <div className='w-auto'>
-                                        <FaRegTrashAlt className='mr-auto text-[#4a5565a8]' />
+                                    <div className='flex items-center space-x-5 text-md'>
+                                        <HiOutlineMinus className='size-6 border border-[#4a556556] rounded-sm hover:bg-gray-200 hover:cursor-pointer' />
+                                        <span>1</span>
+                                        <IoIosAdd className='size-6 border border-[#4a556556] rounded-sm hover:bg-gray-200 hover:cursor-pointer' />
+                                        <h6 className='text-nowrap'>R$ <span>20.00</span></h6>
                                     </div>
-                                </div>
-                                <div className='flex items-center space-x-5 text-md'>
-                                    <HiOutlineMinus className='size-6 border border-[#4a556556] rounded-sm hover:bg-gray-200' />
-                                    <span>1</span>
-                                    <IoIosAdd className='size-6 border border-[#4a556556] rounded-sm hover:bg-gray-200' />
-                                    <h6 className='text-nowrap'>R$ <span>20.00</span></h6>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    {/* Produto do carrinho */}
-                    <div className='flex pb-4 border-b border-[#4a556556]'>
-                        <img src="/Capa.png" className='h-22 rounded-lg' />
-                        <div className='flex mx-5 items-center'>
-                            <div className='space-y-2'>
-                                <div className='flex'>
-                                    <div className='w-full'>
-                                        <h1 className='text-md font-semibold -my-1'>Capa 13 Pro Max</h1>
-                                        <span className='text-[#94A3B8] text-sm'>Vermelho</span>
-                                    </div>
-                                    <div className='w-auto'>
-                                        <FaRegTrashAlt className='mr-auto text-[#4a5565a8]' />
-                                    </div>
-                                </div>
-                                <div className='flex items-center space-x-5 text-md'>
-                                    <HiOutlineMinus className='size-6 border border-[#4a556556] rounded-sm hover:bg-gray-200' />
-                                    <span>1</span>
-                                    <IoIosAdd className='size-6 border border-[#4a556556] rounded-sm hover:bg-gray-200' />
-                                    <h6 className='text-nowrap'>R$ <span>20.00</span></h6>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    {/* Produto do carrinho */}
-                    <div className='flex pb-4 border-b border-[#4a556556]'>
-                        <img src="/Capa.png" className='h-22 rounded-lg' />
-                        <div className='flex mx-5 items-center'>
-                            <div className='space-y-2'>
-                                <div className='flex'>
-                                    <div className='w-full'>
-                                        <h1 className='text-md font-semibold -my-1'>Capa 13 Pro Max</h1>
-                                        <span className='text-[#94A3B8] text-sm'>Vermelho</span>
-                                    </div>
-                                    <div className='w-auto'>
-                                        <FaRegTrashAlt className='mr-auto text-[#4a5565a8]' />
-                                    </div>
-                                </div>
-                                <div className='flex items-center space-x-5 text-md'>
-                                    <HiOutlineMinus className='size-6 border border-[#4a556556] rounded-sm hover:bg-gray-200' />
-                                    <span>1</span>
-                                    <IoIosAdd className='size-6 border border-[#4a556556] rounded-sm hover:bg-gray-200' />
-                                    <h6 className='text-nowrap'>R$ <span>20.00</span></h6>
-                                </div>
-                            </div>
-                        </div>
+
                     </div>
 
-                </div>
-
-                <div className='px-10 py-4 border-t border-[#4a556556]'>
-                    <div className='pb-4 space-y-5 border-b border-[#4a556556]'>
-                        <div className='flex justify-between text-md'>
-                            <p className='font-semibold'>Subtotal</p>
-                            <span className='font-bold'>R$ 20.00</span>
+                    {/* Resumo da compra */}
+                    <div className='px-10 w-full py-6 border-t border-[#4a556556] flex-none bg-white'>
+                        <div className='pb-4 space-y-5 border-b border-[#4a556556]'>
+                            <div className='flex justify-between text-md'>
+                                <p className='font-semibold'>Subtotal</p>
+                                <span className='font-bold'>R$ 20.00</span>
+                            </div>
+                            <div className='flex justify-between'>
+                                <p className='font-semibold'>Frete</p>
+                                <span className='font-bold text-[#00b7ff]'>Grátis</span>
+                            </div>
                         </div>
-                        <div className='flex justify-between'>
-                            <p className='font-semibold'>Frete</p>
-                            <span className='font-bold text-[#00b7ff]'>Grátis</span>
+                        <div className='flex py-4 justify-between'>
+                            <span className='font-semibold'>Total</span>
+                            <span className='font-bold text-[#00b7ff]'>R$ 20.00</span>
                         </div>
+                        <Link to="/checkout">
+                            <button className='block my-4 text-md text-white bg-[#00b7ff] w-full p-2 rounded-md hover:cursor-pointer'>
+                                Finalizar Compra
+                            </button>
+                        </Link>
+                        <Link to="/">
+                            <button onClick={() => setCarrinhoMenuAberto(!carrinhoMenuAberto)} className='text-md border border-[#4a556556] w-full p-2 rounded-md hover:cursor-pointer'>
+                                Continuar Comprando
+                            </button>
+                        </Link>
                     </div>
-                    <div className='flex py-4 justify-between'>
-                        <span className='font-semibold'>Total</span>
-                        <span className='font-bold text-[#00b7ff]'>R$ 20.00</span>
-                    </div>
-                    <Link to="/checkout">
-                        <button className='block my-4 text-md text-white bg-[#00b7ff] w-full p-2 rounded-md'>
-                            Finalizar Compra
-                        </button>
-                    </Link>
-                    <Link to="/">
-                        <button onClick={() => setCarrinhoMenuAberto(!carrinhoMenuAberto)} className='text-md border border-[#4a556556] w-full p-2 rounded-md'>
-                            Continuar Comprando
-                        </button>
-                    </Link>
                 </div>
             </div>
 

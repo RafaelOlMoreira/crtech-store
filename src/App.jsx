@@ -1,6 +1,8 @@
 import { Routes, Route } from 'react-router-dom';
 
 import Header from './frontend/mobile/Components/Header'
+import HeaderDesktop from './frontend/desktop/Components/HeaderDesktop';
+
 import Carrousel from './frontend/mobile/Pages/CarouselSection/CarouselSection'
 import Categories from './frontend/mobile/Pages/CategoriesSection/CategoriesSection'
 import Offers from './frontend/mobile/Pages/OffersSection/OffersSection'
@@ -12,7 +14,6 @@ import Footer from './frontend/mobile/Components/Footer'
 
 import Checkout from './frontend/mobile/Pages/Checkout/Checkout'
 import Login from './frontend/mobile/Pages/Login/Login'
-import HeaderDesktop from './frontend/desktop/Components/HeaderDesktop';
 
 const slides = [
     "/Foto1.jpg",
@@ -26,9 +27,11 @@ function App() {
             <Routes>
                 <Route path="/" element={
                     <>
+                        {/* Header para Desktop */}
                         <div className='hidden md:block'>
                             <HeaderDesktop />
                         </div>
+                        {/* Header para Mobile */}
                         <div className='block md:hidden'>
                             <Header />
                         </div>
