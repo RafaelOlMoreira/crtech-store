@@ -14,11 +14,16 @@ import Footer from './frontend/mobile/Components/Footer'
 
 import Checkout from './frontend/mobile/Pages/Checkout/Checkout'
 import Login from './frontend/mobile/Pages/Login/Login'
+import CarouselDesktop from './frontend/desktop/Pages/CarouselSection/CarouselDesktop';
 
-const slides = [
-    "/Foto1.jpg",
-    "/Foto2.jpg",
-    "/Foto3.jpg",
+const slidesMobile = [
+    "/Foto1Mobile.png",
+    "/Foto2Mobile.png",
+]
+
+const slidesDesktop = [
+    "/Foto1Desktop.png",
+    "/Foto2Desktop.png",
 ]
 
 function App() {
@@ -36,11 +41,22 @@ function App() {
                             <Header />
                         </div>
 
-                        <Carrousel autoSlide={true}>
-                            {slides.map((s) => (
-                                <img src={s} />
-                            ))}
-                        </Carrousel>
+                        {/* Carousel para Desktop */}
+                        <div className='hidden md:block'>
+                            <CarouselDesktop autoSlide={true}>
+                                {slidesDesktop.map((s) => (
+                                    <img src={s} />
+                                ))}
+                            </CarouselDesktop>
+                        </div>
+                        {/* Carousel para Mobile */}
+                        <div className='block md:hidden'>
+                            <Carrousel autoSlide={true}>
+                                {slidesMobile.map((s) => (
+                                    <img src={s} />
+                                ))}
+                            </Carrousel>
+                        </div>
                         <Categories />
                         <Offers />
                         <Releases />
