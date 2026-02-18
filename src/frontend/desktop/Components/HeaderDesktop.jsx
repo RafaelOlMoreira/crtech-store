@@ -28,16 +28,15 @@ function HeaderDesktop() {
         </div>
 
         <div className='flex space-x-5'>
+          <div className='flex items-center space-x-2 p-2.5'>
+            <span className=''>Olá, <span className='text-[#00B5FF]'>Usuário!</span></span>
+          </div>
           <Link to="/login">
             <div className='flex items-center space-x-2 p-2.5 rounded-lg hover:bg-gray-200'>
               <FaRegUser className='size-6' />
               <span className=''>Minha Conta</span>
             </div>
           </Link>
-          <div className='flex items-center space-x-2 p-2.5 rounded-lg hover:bg-gray-200'>
-            <FaRegHeart className='size-6' />
-            <span className=''>Favoritos</span>
-          </div>
           <div className='flex items-center space-x-2 p-2.5 rounded-lg hover:bg-gray-200 hover:cursor-pointer' onClick={() => setCarrinhoMenuAberto(!carrinhoMenuAberto)}>
             <span className='absolute bg-[#00B5FF] px-1.5 -mt-10 ml-22 rounded-4xl font-bold text-[14px] text-white'>
               3
