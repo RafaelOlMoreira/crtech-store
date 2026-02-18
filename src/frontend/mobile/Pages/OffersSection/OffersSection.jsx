@@ -19,8 +19,8 @@ function Offers() {
                 {/* Top menu oferta desktop */}
                 <div className='hidden md:flex md:items-center md:justify-between'>
                     <div className='text-left space-y-2'>
-                        <h1 className='font-bold text-3xl'>Ofertas Relâmpago</h1>
-                        <span className='text-md text-white'>Aproveite a oferta antes que acabe!</span>
+                        <h1 className='font-bold text-4xl'>Ofertas Relâmpago</h1>
+                        <span className='text-lg text-white'>Aproveite a oferta antes que acabe!</span>
                     </div>
                     <Countdown duration={TempoOferta} />
                 </div>
