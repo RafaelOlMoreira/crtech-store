@@ -6,8 +6,8 @@ import { PiHeadsetBold } from "react-icons/pi";
 
 function StoreBenefits() {
     return (
-        <section className='bg-white py-10 px-4'>
-            <div className='grid grid-cols-2 space-y-8'>
+        <section className='bg-white py-10 px-4 md:px-32'>
+            <div className='grid grid-cols-2 md:grid-cols-4 space-y-8'>
                 {/* Frete grátis */}
                 <div className='flex flex-col items-center'>
                     <FaTruck className='text-[#00B5FF] bg-[#00B5FF]/20 p-4 size-16 rounded-full' />
