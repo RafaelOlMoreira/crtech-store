@@ -11,10 +11,10 @@ function Categories() {
         <section id='categorias' className='scroll-mt-32 bg-gray-300/20 py-10 px-8'>
             {/* Info Section */}
             <div className='flex-col text-center space-y-2.5'>
-                <h1 className='text-3xl font-bold'>
+                <h1 className='text-3xl md:text-5xl font-bold'>
                     Categorias
                 </h1>
-                <span className='text-md text-[#94A3B8]'>
+                <span className='text-md md:text-lg text-[#94A3B8]'>
                     Encontre os produtos perfeitos para você.
                 </span>
             </div>
